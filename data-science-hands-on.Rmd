@@ -107,3 +107,7 @@ data %>%
   filter(buy == 0) %>% 
   describe(age)
 ```
+
+# Finding Insights
+
+# Storytelling
