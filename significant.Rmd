@@ -1,0 +1,61 @@
+---
+title: "significant"
+author: "Roland Krasser"
+date: "14 2 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(explore)
+library(tidydice)
+```
+
+# Einführung
+
+Ein Grundverständnis von Statistik und Wahrscheinlichkeitsrechnung ist für Advanced Analytics und Data Science sehr hilfreich.
+
+## tidydice
+
+{tidydice} ist ein R-Package mit dem man Würfel-Experimente simulieren kann.
+
+Das Package ist auf [CRAN](https://CRAN.R-project.org/package=tidydice "tidydice")
+
+Einen Würfel einmal rollen:
+
+```{r fig.height=1, fig.width=6}
+roll_dice(times = 1, rounds = 1) %>% 
+  plot_dice()
+```
+
+Einen Würfel 6 mal rollen:
+
+```{r fig.height=1, fig.width=6}
+roll_dice(times = 6, rounds = 1) %>% 
+  plot_dice()
+```
+
+Designe dir deinen eigenen Würfel:
+
+```{r fig.height=1, fig.width=6}
+roll_dice(times = 6, rounds = 1) %>% 
+  plot_dice(fill = "yellow", fill_success = "gold", 
+            point_color = "blue", line_color = "lightblue")
+```
+
+## Erwartungswert
+
+Wenn du 6 mal würfelst, wie oft kommt eine 6?
+
+Wenn du 60 mal würfelst, wie oft kommt eine 6?
+
+Macht es einen Unterschied ob du mit 6 Würfeln 10 mal würfelst, oder mit 1 Würfel 60 mal?
+
+## Ausgangssituation
+
+In unserem letzten "Hands On" wurde ein Produkt ca. von jedem 6. Kunden gekauft - das entspricht der gleichen Wahrscheinlichkeit, wie bei einem Würfel eine 6 zu würfeln (1/6 = 16,7%).
+
+Nun hat die Produktentwicklung eine Änderung am Produkt vorgenommen, es ist nun ganz rot. Das rote Produkt haben 14 von 60 Kunden gekauft (23,3%) - das ist eine um fast 40% höhere Take-Rate als vorher! Soll die Produktion jetzt umgestellt werden (Investitionskosten von 1 Mio EUR)?
+
+# Entscheidung

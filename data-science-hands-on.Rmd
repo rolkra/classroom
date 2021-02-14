@@ -56,6 +56,8 @@ Durch die Verwendung von Code sind die einzelnen Abeitsschritte genau und reprod
 
 Hier im Kurs verwenden wir die Pakete {tidyverse} und {explore}
 
+{explore} ist auf [CRAN](https://CRAN.R-project.org/package=explore "explore"). Dort findest du auch [Beispiele](https://cran.r-project.org/web/packages/explore/vignettes/explore_penguins.html "explore-penguins") wie man es nutzt.
+
 ## Prozess
 
 Es gibt (vereinfacht) 4 grundlegende Schritte:
