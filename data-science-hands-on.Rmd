@@ -17,6 +17,20 @@ library(tidydice)
 
 # Einführung
 
+## rstudio.cloud
+
+RStudio ist ein Datascience Tool das entweder lokal, oder über Webzugang (Cloud) verwendet werden kann.
+
+-   Links oben = Code Editor
+
+-   Link unten = Console (Ausgabe von Text)
+
+-   Rechts oben = Anzeige von Daten und Variablen
+
+-   Rechts unten = Anzeige von Files und Plots
+
+Wir arbeiten hauptsächlich im Code Editor!
+
 ## Notebooks
 
 Notebooks sind ein typisches Data Science Werkzeug. Sie enthalten Code, das Ergebnis von Code (z.B. Grafiken) und Text/Dokumentation in einem einzigen Dokument. Vorteil: alles ist an einem Ort, und alle Schritte sind nachvollziehbar (reproducible data science)
@@ -29,10 +43,10 @@ Den Code kann du ausführen, indem du in den Text klickst und danach auf den gr�
 
 Einige praktische Tastenkürzel:
 
-| Tastenkombi        | Bedeutung          |
-|--------------------|--------------------|
-| `<strg> <alt> i`   | insert code chunk  |
-| `<strg> <shift> m` | pipe operator %\>% |
+| Tastenkombi        | Bedeutung           |
+|--------------------|---------------------|
+| `<strg> <alt> i`   | Code Block einfügen |
+| `<strg> <shift> m` | pipe operator %\>%  |
 
 ## Coding
 
@@ -42,22 +56,14 @@ Durch die Verwendung von Code sind die einzelnen Abeitsschritte genau und reprod
 
 Hier im Kurs verwenden wir die Pakete {tidyverse} und {explore}
 
-## Data Science Process
+## Prozess
 
 Es gibt (vereinfacht) 4 grundlegende Schritte:
 
 -   Business Understanding: Um was geht es?
 -   Data Understanding: Was bedeuten die Daten?
--   Finding Insights: Finde nützliche Muster
--   Storytelling: Erzähle eine (wahre) Geschichte
-
-## Coding
-
-Als Data Scientist arbeitet man oft mit einer Programmiersprache (R oder Python) und einer Entwicklungsumgebung (z.B. RStudio oder Jupyter)
-
-Durch die Verwendung von Code sind die einzelnen Abeitsschritte genau und reproduzierbar dokumentiert. Zudem kann auf die Arbeit von vielen anderen Data Scientists zurück gegriffen werden. Es gibt z.B. über 10.000 Pakete auf CRAN die R um spezielle Funktionen im Bereich Statistik und Data Science erweitern.
-
-Hier im Kurs verwenden wir die Pakete {tidyverse} und {explore}
+-   Finding Insights: Finde nützliche Muster!
+-   Storytelling: Erzähle eine (wahre) Geschichte!
 
 ## Ausgangssituation
 

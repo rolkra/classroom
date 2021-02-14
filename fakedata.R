@@ -86,7 +86,7 @@ fakedata = function(obs = 1000,
   if (add_extreme) {
     extreme <- data[nrow(data), ]
     extreme$bbi_usg_gb <- 100000
-    data <- data %>% bind_rows(extreme)
+    data[nrow(data), ] <- extreme[1, ]
   }
   
   # rename target?
