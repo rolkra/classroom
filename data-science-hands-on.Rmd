@@ -1,0 +1,103 @@
+---
+title: "Data Science hands-on"
+author: "Roland Krasser"
+date: "14 2 2021"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(explore)
+library(tidydice)
+```
+
+# Einführung
+
+## Notebooks
+
+Notebooks sind ein typisches Data Science Werkzeug. Sie enthalten Code, das Ergebnis von Code (z.B. Grafiken) und Text/Dokumentation in einem einzigen Dokument. Vorteil: alles ist an einem Ort, und alle Schritte sind nachvollziehbar (reproducible data science)
+
+In RStudio kannst du ein neues Notebook mit File \> New File \> R Markdown... anlegen
+
+Du kannst Text und Code direkt ändern.
+
+Den Code kann du ausführen, indem du in den Text klickst und danach auf den grünen "Play Button" klickst. Achte auf die Reihenfolge.
+
+Einige praktische Tastenkürzel:
+
+| Tastenkombi        | Bedeutung          |
+|--------------------|--------------------|
+| `<strg> <alt> i`   | insert code chunk  |
+| `<strg> <shift> m` | pipe operator %\>% |
+
+## Coding
+
+Als Data Scientist arbeitet man oft mit einer Programmiersprache (R oder Python) und einer Entwicklungsumgebung (z.B. RStudio oder Jupyter)
+
+Durch die Verwendung von Code sind die einzelnen Abeitsschritte genau und reproduzierbar dokumentiert. Zudem kann auf die Arbeit von vielen anderen Data Scientists zurück gegriffen werden. Es gibt z.B. über 10.000 Pakete auf CRAN die R um spezielle Funktionen im Bereich Statistik und Data Science erweitern.
+
+Hier im Kurs verwenden wir die Pakete {tidyverse} und {explore}
+
+## Data Science Process
+
+Es gibt (vereinfacht) 4 grundlegende Schritte:
+
+-   Business Understanding: Um was geht es?
+-   Data Understanding: Was bedeuten die Daten?
+-   Finding Insights: Finde nützliche Muster
+-   Storytelling: Erzähle eine (wahre) Geschichte
+
+## Coding
+
+Als Data Scientist arbeitet man oft mit einer Programmiersprache (R oder Python) und einer Entwicklungsumgebung (z.B. RStudio oder Jupyter)
+
+Durch die Verwendung von Code sind die einzelnen Abeitsschritte genau und reproduzierbar dokumentiert. Zudem kann auf die Arbeit von vielen anderen Data Scientists zurück gegriffen werden. Es gibt z.B. über 10.000 Pakete auf CRAN die R um spezielle Funktionen im Bereich Statistik und Data Science erweitern.
+
+Hier im Kurs verwenden wir die Pakete {tidyverse} und {explore}
+
+## Ausgangssituation
+
+Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen getestet. Du bekommst nun die Daten und sollst herausfinden, für wen das Produkt besonders gut geeignet ist. Eine andere Anayse hat bereits ergeben, dass vorallem Kunden mit geringer bbi_usg_gb an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 58, ohne Kaufinteresse = 174). Kannst du das bestätigen, und welche andere Eigenschaften sind noch relevant?
+
+Die Daten sind als `data` abgespeichert. Die Variable `buy` enthält die Info, ob der Kunde ein Kaufinteresse hat (buy == 1) oder nicht (buy == 0).
+
+```{r}
+source("fakedata.R")
+data <- fakedata(obs = 1000, target_name = "buy", target1_prob = 1/6)
+```
+
+# Data Understanding
+
+## buy
+
+Wir machen uns zuerst einen Überblick über die Variable `buy`
+
+```{r}
+data %>% describe(buy)
+```
+
+## age
+
+Danach schauen wir uns die Variable `age` an:
+
+```{r}
+data %>% explore(age)
+```
+
+Das Durchschnittsalter kann mittels `describe()` ermittelt werden (mean = Durchschnitt)
+
+```{r}
+data %>% describe(age)
+```
+
+Wenn wir uns nur Kunden ansehen wollen, die das Produkt kaufen wollen:
+
+```{r}
+data %>% 
+  filter(buy == 0) %>% 
+  describe(age)
+```
