@@ -89,9 +89,8 @@ Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen ge
 
 Die Daten sind als `data` abgespeichert. Die Variable `buy` enthält die Info, ob der Kunde ein Kaufinteresse hat (buy == 1) oder nicht (buy == 0).
 
-```{r}
-source("fakedata.R")
-data <- fakedata(obs = 1000, target_name = "buy", target1_prob = 1/6)
+```{r message=FALSE}
+data <- read_csv("data-buy.csv")
 ```
 
 # Data Understanding
