@@ -20,15 +20,16 @@ Entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrschein
 
 *Nicht-Ziele:*
 
-* Statistik Ausbildung
-* Mathematische Formeln
-* Fachbegriffe lernen
+-   Statistik Ausbildung
+-   Mathematische Formeln
+-   Fachbegriffe lernen
+-   Frontalvortrag
 
 *Ziele*
 
-* Spielerisches Ausprobieren
-* Wie "denkt" man als Data Scietist / Statistiker
-* Wie kann man mit dem Zufall "rechnen" 
+-   Gemeinsames spielerisches Erarbeiten
+-   Wie "denkt" man als Data Scietist / Statistiker
+-   Wie kann man mit dem Zufall "rechnen"
 
 ## tidydice
 
@@ -73,4 +74,3 @@ In unserem letzten "Hands On" wurde ein Produkt ca. von jedem 6. Kunden gekauft 
 Nun hat die Produktentwicklung eine Änderung am Produkt vorgenommen, es ist nun ganz rot. Das rote Produkt haben 14 von 60 Kunden gekauft (23,3%) - das ist eine um fast 40% höhere Take-Rate als vorher! Soll die Produktion jetzt umgestellt werden (Investitionskosten von 1 Mio EUR)?
 
 # Ergebnisse
-

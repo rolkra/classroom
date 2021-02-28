@@ -27,10 +27,11 @@ Entdecke auf spielerische Art grundlegende Advanced Analytics Konzepte und Arbei
 -   Programmier Kurs
 -   Data Science Tools Einschulung
 -   Fachbegriffe lernen
+-   Frontalvortrag
 
 **Ziele:**
 
--   Spielerisches Ausprobieren
+-   Gemeinsames spielerisches Erarbeiten
 -   Was "tut" man (und wie "denkt" man) als "Data Scientist"
 
 ## studio.cloud
