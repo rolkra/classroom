@@ -1,7 +1,7 @@
 ---
-title: "Data Science hands-on"
+title: "Datenschatz Suche - Teil 1"
 author: "Roland Krasser"
-date: "14 2 2021"
+date: "28 2 2021"
 output: 
   html_document:
     toc: true
@@ -45,6 +45,8 @@ Einige praktische Tastenkürzel:
 
 | Tastenkombi        | Bedeutung           |
 |--------------------|---------------------|
+| \<strg\> +         | Schrift vergrößern  |
+| \<strg\> -         | Schrift verkleinern |
 | `<strg> <alt> i`   | Code Block einfügen |
 | `<strg> <shift> m` | pipe operator %\>%  |
 
@@ -69,7 +71,7 @@ Es gibt (vereinfacht) 4 grundlegende Schritte:
 
 ## Ausgangssituation
 
-Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen getestet. Du bekommst nun die Daten und sollst herausfinden, für wen das Produkt besonders gut geeignet ist. Eine andere Anayse hat bereits ergeben, dass vorallem Kunden mit geringer bbi_usg_gb an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 58, ohne Kaufinteresse = 174). Kannst du das bestätigen, und welche andere Eigenschaften sind noch relevant?
+Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen getestet. Du bekommst nun die Daten und sollst herausfinden, für wen das Produkt besonders gut geeignet ist. Eine andere Anayse hat bereits ergeben, dass vorallem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 58, ohne Kaufinteresse = 174). Kannst du das bestätigen, und welche andere Eigenschaften sind noch relevant?
 
 Die Daten sind als `data` abgespeichert. Die Variable `buy` enthält die Info, ob der Kunde ein Kaufinteresse hat (buy == 1) oder nicht (buy == 0).
 
@@ -93,22 +95,22 @@ data %>% describe(buy)
 Danach schauen wir uns die Variable `age` an:
 
 ```{r}
-data %>% explore(age)
-```
-
-Das Durchschnittsalter kann mittels `describe()` ermittelt werden (mean = Durchschnitt)
-
-```{r}
 data %>% describe(age)
 ```
 
-Wenn wir uns nur Kunden ansehen wollen, die das Produkt kaufen wollen:
+Die Kunden sind zwischen 18 und 93 Jahr alt. Das Durchschnittsalter (mean) beträgt 57.7 Jahre.
+
+Einen besseren Überblick bekommen wir, wenn wir uns das Alter grafisch ausgeben:
 
 ```{r}
-data %>% 
-  filter(buy == 0) %>% 
-  describe(age)
+data %>% explore(age)
 ```
+
+Auf der X-Achse sieht man das Alter (sehr kleine und sehr große Werte werden automatisch ausgeblendet). Der "Hügel" (Histogramm) zeigt an, welche Altersgruppen wie häufig vorkommen. Der "Gipfel" des Hügels liegt hier ca. beim Mittelwert.
+
+## [variable]
+
+Versuche es selber!
 
 # Finding Insights
 
