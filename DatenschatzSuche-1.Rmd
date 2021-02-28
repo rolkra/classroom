@@ -93,9 +93,9 @@ Es gibt (vereinfacht) 4 grundlegende Schritte:
 -   Finding Insights: Finde nützliche Muster!
 -   Storytelling: Erzähle eine (wahre) Geschichte!
 
-# Business Unerstanding
+# Business Understanding
 
-Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen getestet. Du bekommst nun die Daten und sollst herausfinden, für wen das Produkt besonders gut geeignet ist. Eine andere Anayse hat bereits ergeben, dass vorallem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174). Kannst du das bestätigen, und welche andere Eigenschaften sind noch relevant?
+Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen getestet. Du bekommst nun die Daten und sollst herausfinden, für wen das Produkt besonders gut geeignet ist. Eine andere Anayse hat bereits ergeben, dass vor allem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174). Kannst du das bestätigen, und welche andere Eigenschaften sind noch relevant?
 
 Die Daten sind als `data` abgespeichert. Die Variable `buy` enthält die Info, ob der Kunde ein Kaufinteresse hat (buy == 1) oder nicht (buy == 0).
 
@@ -113,9 +113,13 @@ Wir machen uns zuerst einen Überblick über die Variable `buy`
 data %>% describe(buy)
 ```
 
+Ca. 16% von den insgesamt 1000 Kunden haben gekauft (buy == 1)
+
 ## age
 
 Danach schauen wir uns die Variable `age` an:
+
+Welche Altersverteilung wäre zu erwarten? Was wäre plausibel?
 
 ```{r}
 data %>% describe(age)
@@ -130,6 +134,12 @@ data %>% explore(age)
 ```
 
 Auf der X-Achse sieht man das Alter (sehr kleine und sehr große Werte werden automatisch ausgeblendet). Der "Hügel" (Histogramm) zeigt an, welche Altersgruppen wie häufig vorkommen. Der "Gipfel" des Hügels liegt hier ca. beim Mittelwert.
+
+Das gesamte Histogramm kann man sehen mit:
+
+```{r}
+data %>% explore(age, auto_scale = FALSE)
+```
 
 ## [variable...]
 
