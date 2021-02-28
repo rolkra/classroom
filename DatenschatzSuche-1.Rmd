@@ -83,7 +83,7 @@ Es gibt (vereinfacht) 4 grundlegende Schritte:
 -   Finding Insights: Finde nützliche Muster!
 -   Storytelling: Erzähle eine (wahre) Geschichte!
 
-## Ausgangssituation
+## Business Unerstanding
 
 Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen getestet. Du bekommst nun die Daten und sollst herausfinden, für wen das Produkt besonders gut geeignet ist. Eine andere Anayse hat bereits ergeben, dass vorallem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 58, ohne Kaufinteresse = 174). Kannst du das bestätigen, und welche andere Eigenschaften sind noch relevant?
 
