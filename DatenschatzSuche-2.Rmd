@@ -14,7 +14,9 @@ library(tidydice)
 
 # Einführung
 
-Ein Grundverständnis von Statistik und Wahrscheinlichkeitsrechnung ist für Advanced Analytics und Data Science sehr hilfreich.
+Sind Muster, die wir in den Daten finden ein "Datenschatz" oder nur "Zufallsrauschen"?
+
+Entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrscheinlichkeitsrechnung (z.B statistische Signifikamz) ganz ohne mathematische Formeln. Wir führen gemeinsam statistische Experimente durch und verwenden dafür das Data Science Tool R/RStudio (über Webbrowser). Alles was du brauchst sind Interesse am Thema und ein Computer mit Teams und Chrome- oder Firefox-Browser. Keine Statistik und Mathematik Vorkenntnisse notwendig.
 
 ## tidydice
 

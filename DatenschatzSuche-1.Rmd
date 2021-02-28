@@ -17,6 +17,10 @@ library(tidydice)
 
 # Einführung
 
+Du interessierst dich für Advanced Analytics und Data Science und möchtest es einfach mal ausprobieren?
+
+Entdecke auf spielerische Art grundlegende Advanced Analytics Konzepte und Arbeitsweisen. Wir suchen gemeinsam nach spannenden Mustern in Daten und verwenden dafür das Data Science Tool R/RStudio (über Webbrowser). Alles was du brauchst sind Interesse am Thema und ein Computer mit Teams und Chrome- oder Firefox-Browser. Keine Programmiererfahrung notwendig.
+
 ## rstudio.cloud
 
 RStudio ist ein Datascience Tool das entweder lokal, oder über Webzugang (Cloud) verwendet werden kann.
@@ -45,10 +49,20 @@ Einige praktische Tastenkürzel:
 
 | Tastenkombi        | Bedeutung           |
 |--------------------|---------------------|
-| \<strg\> +         | Schrift vergrößern  |
-| \<strg\> -         | Schrift verkleinern |
+| `F1`               | Hilfe               |
+| `<strg> +`         | Schrift vergrößern  |
+| `<strg> -`         | Schrift verkleinern |
 | `<strg> <alt> i`   | Code Block einfügen |
 | `<strg> <shift> m` | pipe operator %\>%  |
+
+Einige Funktionen die wir verwenden:
+
+| Funktion         | Bedeutung                           |
+|------------------|-------------------------------------|
+| `describe()`     | Beschreiben                         |
+| `explore()`      | Grafisch erforschen                 |
+| `filter()`       | Filtern (welche Kunden behalten?)   |
+| `explain_tree()` | Erkläre mit einem Entscheidungsbaum |
 
 ## Coding
 
@@ -108,7 +122,7 @@ data %>% explore(age)
 
 Auf der X-Achse sieht man das Alter (sehr kleine und sehr große Werte werden automatisch ausgeblendet). Der "Hügel" (Histogramm) zeigt an, welche Altersgruppen wie häufig vorkommen. Der "Gipfel" des Hügels liegt hier ca. beim Mittelwert.
 
-## [variable]
+## [variable...]
 
 Versuche es selber!
 
