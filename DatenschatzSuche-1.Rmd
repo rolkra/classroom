@@ -31,7 +31,6 @@ Entdecke auf spielerische Art grundlegende Advanced Analytics Konzepte und Arbei
 **Ziele:**
 
 -   Spielerisches Ausprobieren
-
 -   Was "tut" man (und wie "denkt" man) als "Data Scientist"
 
 ## studio.cloud
@@ -39,11 +38,8 @@ Entdecke auf spielerische Art grundlegende Advanced Analytics Konzepte und Arbei
 RStudio ist ein Datascience Tool das entweder lokal, oder über Webzugang (Cloud) verwendet werden kann.
 
 -   Links oben = Code Editor
-
--   Link unten = Console (Ausgabe von Text)
-
+-   Links unten = Console (Ausgabe von Text)
 -   Rechts oben = Anzeige von Daten und Variablen
-
 -   Rechts unten = Anzeige von Files und Plots
 
 Wir arbeiten hauptsächlich im Code Editor!
