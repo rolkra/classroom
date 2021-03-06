@@ -1,7 +1,7 @@
 ---
 title: "Datenschatz Suche - Teil 1"
 author: "Roland Krasser"
-date: "28 2 2021"
+date: "06-03-2021"
 output: 
   html_document:
     toc: true
@@ -57,13 +57,13 @@ Den Code kann du ausführen, indem du in den Text klickst und danach auf den gr�
 
 Einige praktische Tastenkürzel:
 
-| Tastenkombi        | Bedeutung           |
-|--------------------|---------------------|
-| `F1`               | Hilfe               |
-| `<strg> +`         | Schrift vergrößern  |
-| `<strg> -`         | Schrift verkleinern |
-| `<strg> <alt> i`   | Code Block einfügen |
-| `<strg> <shift> m` | pipe operator %\>%  |
+| Tastenkombi        | Bedeutung                            |
+|--------------------|--------------------------------------|
+| `F1`               | Hilfe                                |
+| `<strg> +`         | Schrift vergrößern                   |
+| `<strg> -`         | Schrift verkleinern                  |
+| `<strg> <alt> i`   | Code Block einfügen                  |
+| `<strg> <shift> m` | pipe operator %\>% (und dann "mach") |
 
 Einige Funktionen die wir verwenden:
 
@@ -82,7 +82,7 @@ Durch die Verwendung von Code sind die einzelnen Abeitsschritte genau und reprod
 
 Hier im Kurs verwenden wir die Pakete {tidyverse} und {explore}
 
-{explore} ist auf [CRAN](https://CRAN.R-project.org/package=explore "explore"). Dort findest du auch [Beispiele](https://cran.r-project.org/web/packages/explore/vignettes/explore_penguins.html "explore-penguins") wie man es nutzt.
+{explore} ist auf [CRAN](https://CRAN.R-project.org/package=explore "explore"). Dort findest du auch weitere [Beispiele](https://cran.r-project.org/web/packages/explore/vignettes/explore_penguins.html "explore-penguins") wie man es nutzt.
 
 ## Prozess
 
@@ -95,7 +95,19 @@ Es gibt (vereinfacht) 4 grundlegende Schritte:
 
 # Business Understanding
 
-Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen getestet. Du bekommst nun die Daten und sollst herausfinden, für wen das Produkt besonders gut geeignet ist. Eine andere Anayse hat bereits ergeben, dass vor allem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174). Kannst du das bestätigen, und welche andere Eigenschaften sind noch relevant?
+Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen getestet. Du bekommst nun die Daten und sollst herausfinden, für wen das Produkt besonders gut geeignet ist.
+
+Eine andere Anayse hat bereits ergeben, dass vor allem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) und Kunden ohne Mobile Voice Produkt (mobilevoice_ind == 0) an dem Produkt interessiert sind.
+
+Hypothesen für Kaufinteresse:
+
+-   **Kunden mit geringer Internet Usage (bbi_usg_gb)**:\
+    Die durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
+
+-   **Kunden ohne Mobile Voice Produkt (mobilevoice_ind == 0)**:\
+    58% der Käufer haben kein Mobile Voice Produkt
+
+Soll das Produkt nur diesen Kunden angeboten werden?
 
 Die Daten sind als `data` abgespeichert. Die Variable `buy` enthält die Info, ob der Kunde ein Kaufinteresse hat (buy == 1) oder nicht (buy == 0).
 
@@ -149,7 +161,7 @@ Versuche es selber!
 
 ## BBI Usage
 
-Eine andere Anayse hat bereits ergeben, dass vorallem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174).
+Eine andere Anayse hat bereits ergeben, dass vor allem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174).
 
 ```{r}
 data %>% filter(buy == 1) %>% describe(bbi_usg_gb)
