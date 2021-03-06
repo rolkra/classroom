@@ -17,7 +17,7 @@ library(tidydice)
 
 ![](images/treasure_map.jpg){width="800"}
 
-Du interessierst dich für Advanced Analytics und Data Science und möchtest es einfach mal ausprobieren?
+**Du interessierst dich für Advanced Analytics und Data Science und möchtest es einfach mal ausprobieren?**
 
 Entdecke auf spielerische Art grundlegende Advanced Analytics Konzepte und Arbeitsweisen. Wir suchen gemeinsam nach spannenden Mustern in Daten und verwenden dafür das Data Science Tool R/RStudio (über Webbrowser). Alles was du brauchst sind Interesse am Thema und ein Computer mit Teams und Chrome- oder Firefox-Browser. Keine Programmiererfahrung notwendig.
 
@@ -34,7 +34,7 @@ Entdecke auf spielerische Art grundlegende Advanced Analytics Konzepte und Arbei
 -   Gemeinsames spielerisches Erarbeiten
 -   Was "tut" man (und wie "denkt" man) als "Data Scientist"
 
-## studio.cloud
+## Rstudio.cloud
 
 RStudio ist ein Datascience Tool das entweder lokal, oder über Webzugang (Cloud) verwendet werden kann.
 
@@ -45,15 +45,15 @@ RStudio ist ein Datascience Tool das entweder lokal, oder über Webzugang (Cloud
 
 Wir arbeiten hauptsächlich im Code Editor!
 
-## Notebooks
+## Notebook Help
 
 Notebooks sind ein typisches Data Science Werkzeug. Sie enthalten Code, das Ergebnis von Code (z.B. Grafiken) und Text/Dokumentation in einem einzigen Dokument. Vorteil: alles ist an einem Ort, und alle Schritte sind nachvollziehbar (reproducible data science)
 
-In RStudio kannst du ein neues Notebook mit File \> New File \> R Markdown... anlegen
+In RStudio kannst du ein neues Notebook mit `File > New File > R Markdown…` anlegen
 
 Du kannst Text und Code direkt ändern.
 
-Einen neuen "Code Chunk" kannst mit Insert \> Code Chunk anlegen (oder einfach mit Copy & Paste)
+Einen neuen "Code Chunk" kannst du mit`Insert > Code Chunk…` anlegen (oder einfach mit Copy & Paste)
 
 Den Code kann du ausführen, indem du in den Text klickst und danach auf den grünen "Play Button" klickst. Achte auf die Reihenfolge.
 
@@ -64,7 +64,7 @@ Einige praktische Tastenkürzel:
 | `F1`               | Hilfe                                |
 | `<strg> +`         | Schrift vergrößern                   |
 | `<strg> -`         | Schrift verkleinern                  |
-| `<strg> <alt> i`   | Code Block einfügen                  |
+| `<strg> <alt> i`   | Code Block einfügen ("insert")       |
 | `<strg> <shift> m` | pipe operator %\>% (und dann "mach") |
 
 Einige Funktionen die wir verwenden:
@@ -149,12 +149,6 @@ data %>% explore(age)
 
 Auf der X-Achse sieht man das Alter (sehr kleine und sehr große Werte werden automatisch ausgeblendet). Der "Hügel" (Histogramm) zeigt an, welche Altersgruppen wie häufig vorkommen. Der "Gipfel" des Hügels liegt hier ca. beim Mittelwert.
 
-Das gesamte Histogramm kann man sehen mit:
-
-```{r}
-data %>% explore(age, auto_scale = FALSE)
-```
-
 ## [Variable ...]
 
 [Jetzt Du! ...]
@@ -193,6 +187,6 @@ data %>% filter(buy == 1) %>% describe(bbi_usg_gb)
 
 # Story Telling
 
-Welchen Kunden soll das Produkt angeboten werden und warum?
+Welchen Kunden soll das Produkt angeboten werden und warum? Erzähle eine "Geschichte", die alle wesentlichen Insights enthält, aber trotzdem für einen Data Science Laien einfach verständlich und nachvollziehbar ist!
 
 [Jetzt Du! ...]
