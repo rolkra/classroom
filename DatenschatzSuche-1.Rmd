@@ -177,7 +177,7 @@ data %>% explore(age, target = buy)
 data %>% explain_tree(target = buy)
 ```
 
-## Hypothese geringe BBI Usage
+## Hypothese: geringe BBI Usage
 
 Eine andere Anayse hat bereits ergeben, dass vor allem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174).
 
@@ -187,7 +187,7 @@ data %>% filter(buy == 1) %>% describe(bbi_usg_gb)
 
 [Jetzt Du! ...]
 
-## Hypothese kein Mobile Voice
+## Hypothese: kein Mobile Voice
 
 Eine andere Analyse hat bereits ergeben, dass vor allem Kunden ohne Mobile Voice an dem Produkt interessiert sind (58% der Käufer haben kein Mobile Voice Produkt).
 
