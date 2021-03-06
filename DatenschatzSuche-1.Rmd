@@ -189,6 +189,8 @@ data %>% filter(buy == 1) %>% describe(bbi_usg_gb)
 
 ## Hypothese kein Mobile Voice
 
+Eine andere Analyse hat bereits ergeben, dass vor allem Kunden ohne Mobile Voice an dem Produkt interessiert sind (58% der Käufer haben kein Mobile Voice Produkt).
+
 [Jetzt Du! ...]
 
 # Story Telling
