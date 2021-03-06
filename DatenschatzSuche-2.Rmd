@@ -1,8 +1,9 @@
 ---
 title: "Datenschatz Suche - Teil 2"
-author: "Roland Krasser"
-date: "28 2 2021"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
@@ -14,18 +15,20 @@ library(tidydice)
 
 # Einführung
 
-Sind Muster, die wir in den Daten finden ein "Datenschatz" oder nur "Zufallsrauschen"?
+![](images/treasure-map-2.jpg){width="800"}
+
+**Sind Muster, die wir in den Daten finden ein "Datenschatz" oder nur "Zufallsrauschen"?**
 
 Entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrscheinlichkeitsrechnung (z.B statistische Signifikamz) ganz ohne mathematische Formeln. Wir führen gemeinsam statistische Experimente durch und verwenden dafür das Data Science Tool R/RStudio (über Webbrowser). Alles was du brauchst sind Interesse am Thema und ein Computer mit Teams und Chrome- oder Firefox-Browser. Keine Statistik und Mathematik Vorkenntnisse notwendig.
 
-*Nicht-Ziele:*
+**Nicht-Ziele:**
 
 -   Statistik Ausbildung
 -   Mathematische Formeln
 -   Fachbegriffe lernen
 -   Frontalvortrag
 
-*Ziele*
+**Ziele**
 
 -   Gemeinsames spielerisches Erarbeiten
 -   Wie "denkt" man als Data Scietist / Statistiker
@@ -55,9 +58,11 @@ Designe dir deinen eigenen Würfel:
 
 ```{r fig.height=1, fig.width=6}
 roll_dice(times = 6, rounds = 1) %>% 
-  plot_dice(fill = "red", fill_success = "brown", 
+  plot_dice(fill = "blue", fill_success = "darkblue", 
             point_color = "white", line_color = "grey")
 ```
+
+[Jetzt Du! ...]
 
 ## Erwartungswert
 
@@ -74,3 +79,5 @@ In unserem letzten "Hands On" wurde ein Produkt ca. von jedem 6. Kunden gekauft 
 Nun hat die Produktentwicklung eine Änderung am Produkt vorgenommen, es ist nun ganz rot. Das rote Produkt haben 14 von 60 Kunden gekauft (23,3%) - das ist eine um fast 40% höhere Take-Rate als vorher! Soll die Produktion jetzt umgestellt werden (Investitionskosten von 1 Mio EUR)?
 
 # Ergebnisse
+
+[Jetzt Du! ...]
