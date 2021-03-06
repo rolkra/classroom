@@ -15,7 +15,7 @@ library(tidydice)
 
 # Einführung
 
-![](images/treasure_map.jpg){width="800"}
+![](images/treasure-map-1.jpg){width="800"}
 
 **Du interessierst dich für Advanced Analytics und Data Science und möchtest es einfach mal ausprobieren?**
 
