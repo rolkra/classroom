@@ -66,17 +66,29 @@ roll_dice(times = 6, rounds = 1) %>%
 
 ## Erwartungswert
 
-Wenn du 6 mal würfelst, wie oft kommt eine 6?
+**Wenn du 6 mal würfelst, wie oft kommt eine 6?**
 
-Wenn du 60 mal würfelst, wie oft kommt eine 6?
+[Jetzt Du! ...]
 
-Macht es einen Unterschied ob du mit 6 Würfeln 10 mal würfelst, oder mit 1 Würfel 60 mal?
+Du kannst das Würfeln auch simulieren. z.B. mit 6 x würfeln, 100 mal wiederholt.
+
+```{r}
+roll_dice(times = 6, rounds = 100) %>% explore(result)
+```
+
+```{r}
+roll_dice(times = 6, rounds = 100, agg = TRUE) %>% explore(success)
+```
+
+**Wenn du 60 mal würfelst, wie oft kommt eine 6?**
+
+[Jetzt Du! ...]
 
 ## Ausgangssituation
 
 In unserem letzten "Hands On" wurde ein Produkt ca. von jedem 6. Kunden gekauft - das entspricht der gleichen Wahrscheinlichkeit, wie bei einem Würfel eine 6 zu würfeln (1/6 = 16,7%).
 
-Nun hat die Produktentwicklung eine Änderung am Produkt vorgenommen, es ist nun ganz rot. Das rote Produkt haben 14 von 60 Kunden gekauft (23,3%) - das ist eine um fast 40% höhere Take-Rate als vorher! Soll die Produktion jetzt umgestellt werden (Investitionskosten von 1 Mio EUR)?
+Nun hat die Produktentwicklung eine Änderung am Produkt vorgenommen, es ist nun ganz rot. Das rote Produkt haben 14 von 60 Test-Kunden gekauft (23,3%) - das ist eine um fast 40% höhere Take-Rate als vorher! Soll die Produktion jetzt umgestellt werden (Investitionskosten von 1 Mio EUR)?
 
 # Ergebnisse
 
