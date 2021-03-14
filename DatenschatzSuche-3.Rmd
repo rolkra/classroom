@@ -62,7 +62,7 @@ Das Internet ist voll Übungsbeispielen. Suche einfach danach.
 
 Hier ein paar Empfehlungen, die auf der "Datenschatz-Suche" aufbauen:
 
--   Erforsche Pinguine! \
+-   Erforsche Pinguine!\
     <https://cran.r-project.org/web/packages/explore/vignettes/explore_penguins.html>
 
 -   Erforsche Autos aus den 70ern\
@@ -74,9 +74,6 @@ Hier ein paar Empfehlungen, die auf der "Datenschatz-Suche" aufbauen:
 -   Lasse Entscheidungsbäume wachsen!\
     <https://rolkra.github.io/lets-grow-trees/>
 
-```{=html}
-<!-- -->
-```
 -   Analysiere den Titanic Untergang!\
     <https://cran.r-project.org/web/packages/explore/vignettes/explore_titanic.html>
 
