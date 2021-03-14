@@ -1,0 +1,40 @@
+---
+title: "Datenschatz Suche - Teil 3"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(explore)
+library(tidydice)
+```
+
+# Geschafft!
+
+![](images/treasure-map-2.jpg){width="800"}
+
+**Du hast die Datenschatz-Suche gemeistert! Wie könnte es weiter gehen?**
+
+## RStudio.cloud
+
+Du kannst RStudio.cloud weiter kostenlos verwenden, und die Datenschatz-Suche in Ruhe nochmal zu machen. Allerdings ist die kostenlose Rechenzeit in RStudio.cloud mit 15 "Project Hours" pro Monat begrenzt.
+
+Du kannst die "Project Hours" abrufen, indem du in rstudio.cloud rechts oben auf deinen User-Namen clickst.
+
+![](images/rstudio-cloud-projecthours.png){width="800"}
+
+Um Rechenzeit zu sparen, kannst du auch den Speicher-Verbrauch und die Anzahl der CPUs reduzieren. Dazu musst du in ein Projekt gehen (z.B. classroom, das wir für die Schatzsuche verwendet haben) und oben auf das Zahnrad-Symbol clicken. Dort kannst du RAM und Compute auf 0.5 reduzieren, dann kannst du RStudio doppelt so lange pro Monat kostenlos nutzen.
+
+![](images/rstudio-cloud-ressources.png){width="800"}
+
+Mit diesen Einstellungen kannst du allerdings keine großen Datensätze bearbeiten.
+
+**Bitte beachte auch, dass du RStudio.cloud NICHT zur Analyse von echten A1 Daten verwenden darfst (Datenschutz!)**
+
+## Lokales R/RStudio
+
+
