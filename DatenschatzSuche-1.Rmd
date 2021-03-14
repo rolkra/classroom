@@ -63,15 +63,17 @@ Den Code kann du ausführen, indem du in den Text klickst und danach auf den gr�
 
 [Jetzt Du! ...]
 
-Einige praktische Tastenkürzel:
+Einige praktische Tastenkürzel / Icons:
 
-| Tastenkombi        | Bedeutung                            |
-|--------------------|--------------------------------------|
-| `F1`               | Hilfe                                |
-| `<strg> +`         | Schrift vergrößern                   |
-| `<strg> -`         | Schrift verkleinern                  |
-| `<strg> <alt> i`   | Code Block einfügen ("insert")       |
-| `<strg> <shift> m` | pipe operator %\>% (und dann "mach") |
+| Tastenkürzel / Icon                                                  | Bedeutung                              |
+|----------------------------------------------------------------------|----------------------------------------|
+| `F1`                                                                 | Hilfe                                  |
+| `<strg> +`                                                           | Schrift vergrößern                     |
+| `<strg> -`                                                           | Schrift verkleinern                    |
+| `<strg> <alt> i`                                                     | Code Block einfügen ("insert")         |
+| `<strg> <shift> m`                                                   | pipe operator %\>% (und dann "mach")   |
+| Click ![](images/rstudio-icon-structure.png){width="29" height="20"} | Dokument Struktur anzeigen / verbergen |
+| Click ![](images/rstudio-icon-wysiwyg.png){width="31" height="20"}   | Visual Markdown Editor / Source Editor |
 
 Einige Funktionen die wir verwenden:
 
