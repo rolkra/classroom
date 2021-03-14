@@ -19,6 +19,8 @@ library(tidydice)
 
 **Du hast die Datenschatz-Suche gemeistert! Wie könnte es weiter gehen?**
 
+# Weiter üben
+
 ## RStudio.cloud
 
 Du kannst RStudio.cloud weiter kostenlos verwenden, und die Datenschatz-Suche in Ruhe nochmal zu machen. Allerdings ist die kostenlose Rechenzeit in RStudio.cloud mit 15 "Project Hours" pro Monat begrenzt.
@@ -33,8 +35,57 @@ Um Rechenzeit zu sparen, kannst du auch den Speicher-Verbrauch und die Anzahl de
 
 Mit diesen Einstellungen kannst du allerdings keine großen Datensätze bearbeiten.
 
-**Bitte beachte auch, dass du RStudio.cloud NICHT zur Analyse von echten A1 Daten verwenden darfst (Datenschutz!)**
+**Bitte beachte auch, dass du RStudio.cloud NICHT zur Analyse von echten Business-Daten verwenden darfst (Datenschutz!)**
 
 ## Lokales R/RStudio
 
+Du kannst RStudio auch lokal installieren und nutzen. Lasse dir dafür über den EDV Webshop folgende Programme installieren (kostenlos)
 
+-   R for Windows 4.0.2 (oder höher)
+-   RStudio 1.3.959 (oder höher)
+
+Alternativ kannst du diese Programme auch selbst lokal installieren (auch ohne Admin-Rechte):
+
+1.  Download R von <https://cran.r-project.org/bin/windows/base/>
+2.  Starte das Installationsprogramm von R
+3.  Du brauchst keine Einträge im Windows Startmenü
+4.  Gehe zu <https://rstudio.com/products/rstudio/download/>
+5.  Wenn Admin-Rechte am lokalen Computer: Download Installer
+6.  Wenn keine Admin-Rechte am lokalen Computer: Download ZIP/Tarballs
+7.  Start RStudio. Wenn kein RStudio im Windows-Startmenü starte es erstmals händisch (bin/rstudio.exe) und "pinne" es dann an die Startleiste.
+
+# Weiter lernen
+
+## Neue Datenschatz-Suche
+
+Das Internet ist voll Übungsbeispielen. Suche einfach danach.
+
+Hier ein paar Empfehlungen, die auf der "Datenschatz-Suche" aufbauen:
+
+-   Erforsche Pinguine! \
+    <https://cran.r-project.org/web/packages/explore/vignettes/explore_penguins.html>
+
+-   Erforsche Autos aus den 70ern\
+    <https://cran.r-project.org/web/packages/explore/vignettes/explore_mtcars.html>
+
+-   Stecke 50 Personen in einen Bus und schau was passiert!\
+    <https://rolkra.github.io/never-trust-an-average/>
+
+-   Lasse Entscheidungsbäume wachsen!\
+    <https://rolkra.github.io/lets-grow-trees/>
+
+```{=html}
+<!-- -->
+```
+-   Analysiere den Titanic Untergang!\
+    <https://cran.r-project.org/web/packages/explore/vignettes/explore_titanic.html>
+
+## R Coding Lernen
+
+Wenn du das Programmieren in R lernen möchtest hier ein paar Empfehlungen:
+
+-   [tps://r4ds.had.co.nz/index.html](https://r4ds.had.co.nz/index.html)
+
+-   <https://moderndive.com/>
+
+-   <https://www.youtube.com/user/safe4democracy/videos>
