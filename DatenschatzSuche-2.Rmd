@@ -7,10 +7,19 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+# rmarkdown settings
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+
+# packages
 library(tidyverse)
-library(explore)
-library(tidydice)
+library(explore)library(tidydice)
+
+# user defined function
+add_line <- function(
+  plot, x = 0, color = "red", size = 1, alpha = 0.75)  {
+  plot + geom_vline(
+    xintercept = x, color = color, alpha = alpha, size = size)
+}
 ```
 
 # Einführung

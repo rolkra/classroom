@@ -7,10 +7,20 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+# rmarkdown settings
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+
+# packages
 library(tidyverse)
 library(explore)
 library(tidydice)
+
+# user defined function
+add_line <- function(
+  plot, x = 0, color = "red", size = 1, alpha = 0.75)  {
+  plot + geom_vline(
+    xintercept = x, color = color, alpha = alpha, size = size)
+}
 ```
 
 # Einführung
@@ -74,6 +84,7 @@ Einige praktische Tastenkürzel / Icons:
 | `<strg> <shift> m`                                                   | pipe operator %\>% (und dann "mach")   |
 | Click ![](images/rstudio-icon-structure.png){width="29" height="20"} | Dokument Struktur anzeigen / verbergen |
 | Click ![](images/rstudio-icon-wysiwyg.png){width="31" height="20"}   | Visual Markdown Editor / Source Editor |
+| Click ![](images/rstudio-icon-knit.png "Knit"){width="46"}           | Erzeuge ein HTML-File                  |
 
 Einige Funktionen die wir verwenden:
 
@@ -81,6 +92,7 @@ Einige Funktionen die wir verwenden:
 |------------------|-------------------------------------|
 | `describe()`     | Beschreiben                         |
 | `explore()`      | Grafisch erforschen                 |
+| `add_line()`     | Eine Linie in Grafik einfügen       |
 | `filter()`       | Filtern (welche Kunden behalten?)   |
 | `explain_tree()` | Erkläre mit einem Entscheidungsbaum |
 
@@ -156,6 +168,12 @@ data %>% explore(age)
 ```
 
 Auf der X-Achse sieht man das Alter (sehr kleine und sehr große Werte werden automatisch ausgeblendet). Der "Hügel" (Histogramm) zeigt an, welche Altersgruppen wie häufig vorkommen. Der "Gipfel" des Hügels liegt hier ca. beim Mittelwert.
+
+Wir können den Mittelwert mit einer Linie einzeichnen:
+
+```{r}
+data %>% explore(age) %>% add_line(57.7)
+```
 
 ## [Variable ...]
 
