@@ -65,9 +65,6 @@ Hier ein paar Empfehlungen, die auf der "Datenschatz-Suche" aufbauen:
 -   Erforsche Autos aus den 70ern\
     <https://cran.r-project.org/web/packages/explore/vignettes/explore_mtcars.html>
 
--   Stecke 50 Personen in einen Bus und schau was passiert!\
-    <https://rolkra.github.io/never-trust-an-average/>
-
 -   Lasse Entscheidungsbäume wachsen!\
     <https://rolkra.github.io/lets-grow-trees/>
 
@@ -78,8 +75,19 @@ Hier ein paar Empfehlungen, die auf der "Datenschatz-Suche" aufbauen:
 
 Wenn du das Programmieren in R lernen möchtest hier ein paar Empfehlungen:
 
--   [tps://r4ds.had.co.nz/index.html](https://r4ds.had.co.nz/index.html)
+-   R for Data Scince\
+    <https://r4ds.had.co.nz/index.html>
 
--   <https://moderndive.com/>
+-   Tidy Tuesday Live Coding (Advanced)\
+    <https://www.youtube.com/user/safe4democracy/videos>
 
--   <https://www.youtube.com/user/safe4democracy/videos>
+## Mehr Statistik 
+
+-   Stecke 50 Personen in einen Bus und schau was passiert!\
+    <https://rolkra.github.io/never-trust-an-average/>
+
+-   Statistical Inference (Advanced)\
+    <https://moderndive.com/>
+
+-   Statistik mit R (Advanced)\
+    <https://bookdown.org/speegled/foundations-of-statistics/>
