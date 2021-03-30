@@ -85,6 +85,9 @@ Wenn du das Programmieren in R lernen möchtest hier ein paar Empfehlungen:
 
 -   Stecke 50 Personen in einen Bus und schau was passiert!\
     <https://rolkra.github.io/never-trust-an-average/>
+    
+-   Target vs Control-Group (Shiny App)\
+    <https://github.com/rolkra/cgtg>
 
 -   Statistical Inference (Advanced)\
     <https://moderndive.com/>
