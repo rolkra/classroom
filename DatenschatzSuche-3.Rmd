@@ -81,6 +81,12 @@ Wenn du das Programmieren in R lernen möchtest hier ein paar Empfehlungen:
 -   Tidy Tuesday Live Coding (Advanced)\
     <https://www.youtube.com/user/safe4democracy/videos>
 
+## Eigene Daten analysieren
+
+- Importiere Daten mit `File` > `Import Dataset...`
+- Und suche nach einem "Datenschatz"
+- Tipp: verwende nicht zu große Daten. Verwende Text-, CSV- oder Excel Dateien wo die einzelnen Beobachtungen (z.B. Kunden) in den Zeilen stehen und Eigenschaften (z.B. Alter, Geschlecht) in den Spalten
+
 ## Mehr Statistik 
 
 -   Stecke 50 Personen in einen Bus und schau was passiert!\

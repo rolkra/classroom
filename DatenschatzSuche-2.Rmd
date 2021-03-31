@@ -44,16 +44,23 @@ Entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrschein
 -   Wie "denkt" man als Data Scietist / Statistiker
 -   Wie kann man mit dem Zufall "rechnen"
 
-## Plastik oder Gold?
+## Echtes Gold?
 
-Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es ein echter Datenschatz, oder enhält der Schatz doch nur "Plastik-Münzen"?
+Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es ein echter Datenschatz mit Goldmünzen, oder enhält der Schatz doch nur "Plastik-Münzen"?
 
 Die 4 häufigsten "Fallen":
 
-* Absolute statt relative Vergleiche
-* Mittelwerte mit Extremwerten
-* Statistische Signifikanz vergessen
-* Korrelation mit Kausalität verwechseln
+* **Absolute statt relative Vergleiche**:\
+In Graz gibt es viel mehr Corona Fälle als in Fürstenfeld, daher lieber nicht nach Graz fahren!
+
+* **Mittelwerte mit Extremwerten**:\
+100 Kunden haben je ca 1 EUR Umsatz, 1 Kunde hat 1000 EUR. Ein typischer Kunde diese Kundengruppe hat ca 11 EUR (Mittelwert)!
+
+* **Statistische Signifikanz vergessen**:\
+Blind Verkostung Cola Light vs Cola Zero: bei 6 von 10 Fällen richtig! Beweis, dass Unterschied erkannt wird, weil mehr als die Hälfte richtig!
+  
+* **Korrelation mit Kausalität verwechseln**:\
+Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
 
 ## tidydice
 
