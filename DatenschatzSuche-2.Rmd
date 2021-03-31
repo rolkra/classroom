@@ -12,7 +12,8 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 
 # packages
 library(tidyverse)
-library(explore)library(tidydice)
+library(explore)
+library(tidydice)
 
 # user defined function
 add_line <- function(
@@ -42,6 +43,17 @@ Entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrschein
 -   Gemeinsames spielerisches Erarbeiten
 -   Wie "denkt" man als Data Scietist / Statistiker
 -   Wie kann man mit dem Zufall "rechnen"
+
+## Plastik oder Gold?
+
+Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es ein echter Datenschatz, oder enhält der Schatz doch nur "Plastik-Münzen"?
+
+Die 4 häufigsten "Fallen":
+
+* Absolute statt relative Vergleiche
+* Mittelwerte mit Extremwerten
+* Statistische Signifikanz vergessen
+* Korrelation mit Kausalität verwechseln
 
 ## tidydice
 
