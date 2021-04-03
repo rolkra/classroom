@@ -59,7 +59,7 @@ Wir arbeiten hauptsächlich im Code Editor!
 
 Notebooks sind ein typisches Data Science Werkzeug. Sie enthalten Code, das Ergebnis von Code (z.B. Grafiken) und Text/Dokumentation in einem einzigen Dokument. Vorteil: alles ist an einem Ort, und alle Schritte sind nachvollziehbar (reproducible data science)
 
-In RStudio kannst du ein neues Notebook mit `File > New File > R Markdown…` anlegen
+In RStudio kannst du ein neues Notebook mit `File > New File > R Notebook` anlegen
 
 Du kannst Text und Code direkt ändern.
 
