@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 
 ## RStudio.cloud
 
-Du kannst RStudio.cloud weiter kostenlos verwenden, und die Datenschatz-Suche in Ruhe nochmal zu machen. Allerdings ist die kostenlose Rechenzeit in RStudio.cloud mit 15 "Project Hours" pro Monat begrenzt.
+Du kannst RStudio.cloud weiter kostenlos verwenden und die Datenschatz-Suche in Ruhe noch einmal machen. Allerdings ist die kostenlose Rechenzeit in RStudio.cloud mit 15 "Project Hours" pro Monat begrenzt.
 
 Du kannst die "Project Hours" abrufen, indem du in rstudio.cloud rechts oben auf deinen User-Namen clickst.
 
@@ -55,8 +55,6 @@ Alternativ kannst du diese Programme auch selbst lokal installieren (auch ohne A
 
 ## Neue Datenschatz-Suche
 
-Das Internet ist voll Übungsbeispielen. Suche einfach danach.
-
 Hier ein paar Empfehlungen, die auf der "Datenschatz-Suche" aufbauen:
 
 -   Erforsche Pinguine!\
@@ -75,7 +73,10 @@ Hier ein paar Empfehlungen, die auf der "Datenschatz-Suche" aufbauen:
 
 Wenn du das Programmieren in R lernen möchtest hier ein paar Empfehlungen:
 
--   R for Data Scince\
+-   RStudio Primers\
+    <https://rstudio.cloud/learn/primers>
+
+-   R for Data Science\
     <https://r4ds.had.co.nz/index.html>
 
 -   Tidy Tuesday Live Coding (Advanced)\
