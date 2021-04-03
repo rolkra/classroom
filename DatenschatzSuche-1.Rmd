@@ -191,13 +191,39 @@ data %>% explore(age, target = buy)
 
 [Jetzt Du! ...]
 
-## Machine Learning
+## Multivariat
+
+Wir haben etliche Muster gefunden. Aber welche sind besonders wichtig, und wie hängen sie zusammen?
+
+Ein Entscheidungsbaum (Decision Tree) kann uns die Zusammenhänge erklären:
 
 ```{r}
 data %>% explain_tree(target = buy)
 ```
 
-## Hypothese: geringe BBI Usage
+## Machine Learning
+
+Der Decision Tree Algorithmus "lernt" welche Kunden eher kaufen. Nun können wir ein Modell erstellen und eine Vorhersage machen:
+
+```{r include=FALSE}
+model <- data %>%
+  select(age, male_ind, bbi_usg_gb, buy) %>% 
+  explain_tree(target = buy, out = "model")
+```
+
+```{r}
+predict(
+  model, 
+  tibble(age = 40, male_ind = 0, bbi_usg_gb = 10)
+)
+```
+
+Wir erhalten die vorhergesagten Wahrscheinlichkeiten für Nicht-Kauf und Kauf (buy)
+
+
+## Hypothesen
+
+### Geringe BBI Usage
 
 Eine andere Anayse hat bereits ergeben, dass vor allem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174).
 
@@ -207,7 +233,7 @@ data %>% filter(buy == 1) %>% describe(bbi_usg_gb)
 
 [Jetzt Du! ...]
 
-## Hypothese: kein Mobile Voice
+### Kein Mobile Voice
 
 Eine andere Analyse hat bereits ergeben, dass vor allem Kunden ohne Mobile Voice an dem Produkt interessiert sind (58% der Käufer haben kein Mobile Voice Produkt).
 
