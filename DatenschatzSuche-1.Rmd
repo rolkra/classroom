@@ -63,7 +63,7 @@ In RStudio kannst du ein neues Notebook mit `File > New File > R Notebook` anleg
 
 Du kannst Text und Code direkt ändern.
 
-Einen neuen "Code Chunk" kannst du mit`Insert > Code Chunk…` anlegen (oder einfach mit Copy & Paste). Zum Testen verwenden wir die Funktion `print`, die einfach nur den Text ausgibt.
+Einen neuen "Code Chunk" kannst du mit `Insert > Code Chunk…` anlegen (oder einfach mit Copy & Paste oder mit `<strg> <alt> i`). Zum Testen verwenden wir die Funktion `print`, die einfach nur den Text ausgibt.
 
 ```{r}
 print("Auf geht's zur Datenschatz Suche!")
@@ -80,7 +80,7 @@ Einige praktische Tastenkürzel / Icons:
 | `F1`                                                                 | Hilfe                                  |
 | `<strg> +`                                                           | Schrift vergrößern                     |
 | `<strg> -`                                                           | Schrift verkleinern                    |
-| `<strg> <alt> i`                                                     | Code Block einfügen ("insert")         |
+| `<strg> <alt> i`                                                     | Code Chunk einfügen ("insert")         |
 | `<strg> <shift> m`                                                   | pipe operator %\>% (und dann "mach")   |
 | Click ![](images/rstudio-icon-structure.png){width="29" height="20"} | Dokument Struktur anzeigen / verbergen |
 | Click ![](images/rstudio-icon-wysiwyg.png){width="31" height="20"}   | Visual Markdown Editor / Source Editor |
