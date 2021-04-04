@@ -220,7 +220,6 @@ predict(
 
 Wir erhalten die vorhergesagten Wahrscheinlichkeiten für Nicht-Kauf und Kauf (buy)
 
-
 ## Hypothesen
 
 ### Geringe BBI Usage
