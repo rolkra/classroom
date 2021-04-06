@@ -41,7 +41,7 @@ Entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrschein
 **Ziele**
 
 -   Gemeinsames spielerisches Erarbeiten
--   Wie "denkt" man als Data Scietist / Statistiker
+-   Wie "denkt" man als Data Scientist / Statistiker
 -   Wie kann man mit dem Zufall "rechnen"
 
 ## Echtes Gold?
