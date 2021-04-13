@@ -44,7 +44,7 @@ fakedata = function(obs = 1000,
                         sample(c(0, 1), obs, replace = TRUE, prob = c(0.4, 0.6)),
                         sample(c(0, 1), obs, replace = TRUE, prob = c(0.6, 0.4))
       ),
-      male_ind = ifelse(target_ind == 1,
+      female_ind = ifelse(target_ind == 0,
                         sample(c(0, 1), obs, replace = TRUE, prob = c(0.3, 0.7)),
                         sample(c(0, 1), obs, replace = TRUE, prob = c(0.7, 0.3))
       ),
