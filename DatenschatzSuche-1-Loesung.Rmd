@@ -139,6 +139,13 @@ Die Daten sind als `data` abgespeichert. Die Variable `buy` enthält die Info, o
 data <- read_csv("data-buy.csv")
 ```
 
+## overview
+
+```{r}
+data %>% describe()
+```
+
+
 ## buy
 
 Wir machen uns zuerst einen Überblick über die Variable `buy`
@@ -230,13 +237,6 @@ data %>% describe(bbi_usg_gb)
 ```
 
 Mittelwert (mean) und Median liegen sehr weit auseinander. Das bedeutet, es gibt hier Extremwerte (die den Mittelwert nach oben verzerren). Der max-Wert liegt bei 100.000 GB (100 Terrabyte)
-
-```{r fig.height=3}
-data %>% 
-  explore(bbi_usg_gb) %>% 
-  add_line(58) %>% 
-  add_line(158)
-```
 
 ```{r}
 data %>% filter(bbi_usg_gb >= 1000) %>% describe(bbi_usg_gb)
