@@ -115,6 +115,14 @@ Für `filter` benötigst du das R-Paket tidyverse, die anderen Funktionen sind i
 
 Wenn du dich bei einer Funktion nicht auskenntst, kannst du auch die Hilfe aufrufen. Gehe mit dem Cursor auf die Funktion (im Code Editor) und drücke `F1`, dann wird dir rechts unten die Hilfe dazu angezeigt.
 
+## R Packages
+
+Durch die Verwendung von Code sind die einzelnen Abeitsschritte genau und reproduzierbar dokumentiert. Zudem kann auf die Arbeit von vielen anderen Data Scientists zurück gegriffen werden. Es gibt z.B. über 10.000 Pakete auf CRAN die R um spezielle Funktionen im Bereich Statistik und Data Science erweitern.
+
+In der Datenschatz Suche haben wir hauptsächlich mit den Paketen {tidyverse} und {explore} gearbeitet.
+
+{explore} ist auf [CRAN](https://CRAN.R-project.org/package=explore "explore"). Dort findest du auch weitere [Beispiele](https://cran.r-project.org/web/packages/explore/vignettes/explore_penguins.html "explore-penguins") wie man es nutzt.
+
 # Weiter lernen
 
 ## Neue Datenschatz-Suche

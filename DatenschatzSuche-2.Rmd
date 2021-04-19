@@ -50,7 +50,7 @@ Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es 
 
 Die 4 häufigsten "Fallen":
 
--   **Absolute statt relative Vergleiche**:\
+-   **Unterschiedliche Gruppengröße**:\
     In Graz gibt es viel mehr Corona Fälle als in Fürstenfeld, daher lieber nicht nach Graz fahren!
 
 -   **Mittelwerte mit Extremwerten**:\
@@ -62,25 +62,41 @@ Die 4 häufigsten "Fallen":
 -   **Korrelation mit Kausalität verwechseln**:\
     Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
 
-## tidydice
+# Datenschatz Suche 1
 
-{tidydice} ist ein R-Package mit dem man Würfel-Experimente simulieren kann.
+Was waren die Zusammenhänge, die wir gefunden haben?
+Gib eine kurze Zusammenfassung:
 
-Das Package ist auf [CRAN](https://CRAN.R-project.org/package=tidydice "tidydice")
+[Jetzt Du! ...]
 
-Einen Würfel einmal rollen:
+## Analyse Produktentwicklung
 
-```{r fig.height=1, fig.width=6}
-roll_dice(times = 1, rounds = 1) %>% 
-  plot_dice()
-```
+Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besonderes großes Kaufinteresse haben:
 
-Einen Würfel 6 mal rollen:
+Hypothesen für Kaufinteresse:
 
-```{r fig.height=1, fig.width=6}
-roll_dice(times = 6, rounds = 1) %>% 
-  plot_dice()
-```
+-   **Kunden mit geringer Internet Usage (bbi_usg_gb)**:\
+    Die durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
+
+-   **Kunden ohne Mobile Voice Produkt (mobilevoice_ind == 0)**:\
+    58% der Käufer haben kein Mobile Voice Produkt
+
+Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen?
+Wenn nein, wer ist in welche Falle "getappt"?
+
+[Jetzt Du! ...]
+
+## Andere Farbe
+
+In Datenschatz Suche - Teil 1 wurde ein Produkt ca. von jedem 6. Kunden gekauft - das entspricht der gleichen Wahrscheinlichkeit, wie bei einem Würfel eine 6 zu würfeln (1/6 = 16,7%).
+
+Nun hat die Produktentwicklung eine Änderung am Produkt vorgenommen, es ist nun ganz rot. Das rote Produkt haben 14 von 60 Test-Kunden gekauft (23,3%) - das ist eine um fast 40% höhere Take-Rate als vorher! Soll die Produktion jetzt umgestellt werden (Investitionskosten von 1 Mio EUR)
+
+Wie kann der Produkt-Kauf auf Würfel "übersetzte" werden?
+
+[Jetzt Du! ...]
+
+# Statistische Signifikanz
 
 Designe dir deinen eigenen Würfel:
 
@@ -94,48 +110,29 @@ roll_dice(times = 6, rounds = 1) %>%
 
 ## Erwartungswert
 
-**Wenn du 6 mal würfelst, wie oft kommt eine 6?**
-
-[Jetzt Du! ...]
-
-Du kannst das Würfeln auch simulieren. z.B. mit 6 x würfeln, 100 mal wiederholt.
-
-```{r}
-roll_dice(times = 6, rounds = 100) %>% explore(result)
-```
-
-```{r}
-roll_dice(times = 6, rounds = 100, agg = TRUE) %>% explore(success)
-```
-
 **Wenn du 60 mal würfelst, wie oft kommt eine 6?**
 
+```{r fig.height=2.5}
+roll_dice(times = 60, rounds = 1000, agg = TRUE) %>% explore(success)
+```
+
+Zeichne den "Erwartungswert" ein (was ist der wahrscheinlichste Wert)
+
 [Jetzt Du! ...]
+
+Wo liegt der Wert 14? Zeichne ihn ein!
+
+[Jetzt Du! ...]
+
+Wie interpretierst du das Ergebnis?
 
 ## Binomialverteilung
 
 Im Statistik Buch steht, dass du bei Würfel Experimenten die Wahrscheinlichkeiten mit einer sogenannten "Binomialverteilung" berechnen kannst.
 
-Wahrscheinlichkeit zufällig \>= 15 mal eine 6 zu würfeln
+Wahrscheinlichkeit zufällig \>= 14 mal eine 6 zu würfeln
 
 ```{r}
-binom(60, 1/6) %>% plot_binom(highlight = 15:30)
+binom(60, 1/6) %>% plot_binom(highlight = 14:30)
 ```
 
-Hat das Statistik Buch recht?
-
-[Jetzt Du! ...]
-
-# Analyse
-
-In Datenschatz Suche - Teil 1 wurde ein Produkt ca. von jedem 6. Kunden gekauft - das entspricht der gleichen Wahrscheinlichkeit, wie bei einem Würfel eine 6 zu würfeln (1/6 = 16,7%).
-
-Nun hat die Produktentwicklung eine Änderung am Produkt vorgenommen, es ist nun ganz rot. Das rote Produkt haben 14 von 60 Test-Kunden gekauft (23,3%) - das ist eine um fast 40% höhere Take-Rate als vorher! Soll die Produktion jetzt umgestellt werden (Investitionskosten von 1 Mio EUR)
-
-Wie kann der Produkt-Kauf auf Würfel "übersetzte" werden?
-
-[Jetzt Du! ...]
-
-# Ergebnis
-
-[Jetzt Du! ...]

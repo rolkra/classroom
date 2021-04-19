@@ -55,15 +55,11 @@ RStudio ist ein Datascience Tool das entweder lokal, oder über Webzugang (Cloud
 
 Wir arbeiten hauptsächlich im Code Editor!
 
-## Notebook Help
+## Notebooks
 
 Notebooks sind ein typisches Data Science Werkzeug. Sie enthalten Code, das Ergebnis von Code (z.B. Grafiken) und Text/Dokumentation in einem einzigen Dokument. Vorteil: alles ist an einem Ort, und alle Schritte sind nachvollziehbar (reproducible data science)
 
-In RStudio kannst du ein neues Notebook mit `File > New File > R Notebook` anlegen
-
 Du kannst Text und Code direkt ändern.
-
-Einen neuen "Code Chunk" kannst du mit `Insert > Code Chunk…` anlegen (oder einfach mit Copy & Paste oder mit `<strg> <alt> i`). Zum Testen verwenden wir die Funktion `print`, die einfach nur den Text ausgibt.
 
 ```{r}
 print("Auf geht's zur Datenschatz Suche!")
@@ -73,63 +69,37 @@ Den Code kann du ausführen, indem du in den Text klickst und danach auf den gr�
 
 [Jetzt Du! ...]
 
-Einige praktische Tastenkürzel / Icons:
+Du kannst den Code auch einfach "kopieren" (kopiere auch das "{r}" mit)
 
-| Tastenkürzel / Icon                                                  | Bedeutung                              |
-|----------------------------------------------------------------------|----------------------------------------|
-| `F1`                                                                 | Hilfe                                  |
-| `<strg> +`                                                           | Schrift vergrößern                     |
-| `<strg> -`                                                           | Schrift verkleinern                    |
-| `<strg> <alt> i`                                                     | Code Chunk einfügen ("insert")         |
-| `<strg> <shift> m`                                                   | pipe operator %\>% (und dann "mach")   |
-| Click ![](images/rstudio-icon-structure.png){width="29" height="20"} | Dokument Struktur anzeigen / verbergen |
-| Click ![](images/rstudio-icon-wysiwyg.png){width="31" height="20"}   | Visual Markdown Editor / Source Editor |
-| Click ![](images/rstudio-icon-knit.png "Knit"){width="46"}           | Erzeuge ein HTML-File                  |
+[Jetzt Du! ...]
+
+## Funktionen
 
 Einige Funktionen die wir verwenden:
 
 | Funktion         | Bedeutung                           |
 |------------------|-------------------------------------|
+| `%>%`            | "und dann" - Operator               |
 | `describe()`     | Beschreiben                         |
 | `explore()`      | Grafisch erforschen                 |
 | `add_line()`     | Eine Linie in Grafik einfügen       |
 | `filter()`       | Filtern (welche Kunden behalten?)   |
 | `explain_tree()` | Erkläre mit einem Entscheidungsbaum |
 
-## Coding
-
-Als Data Scientist arbeitet man oft mit einer Programmiersprache (R oder Python) und einer Entwicklungsumgebung (z.B. RStudio oder Jupyter)
-
-Durch die Verwendung von Code sind die einzelnen Abeitsschritte genau und reproduzierbar dokumentiert. Zudem kann auf die Arbeit von vielen anderen Data Scientists zurück gegriffen werden. Es gibt z.B. über 10.000 Pakete auf CRAN die R um spezielle Funktionen im Bereich Statistik und Data Science erweitern.
-
-Hier im Kurs verwenden wir die Pakete {tidyverse} und {explore}
-
-{explore} ist auf [CRAN](https://CRAN.R-project.org/package=explore "explore"). Dort findest du auch weitere [Beispiele](https://cran.r-project.org/web/packages/explore/vignettes/explore_penguins.html "explore-penguins") wie man es nutzt.
-
 ## Prozess
 
 Es gibt (vereinfacht) 4 grundlegende Schritte:
 
--   Business Understanding: Um was geht es?
--   Data Understanding: Was bedeuten die Daten?
--   Finding Insights: Finde nützliche Muster!
--   Storytelling: Erzähle eine (wahre) Geschichte!
+-   **Business Understanding**: Um was geht es?
+-   **Data Understanding**: Was bedeuten die Daten?
+-   **Finding Insights**: Finde nützliche Muster (und hinterfrage sie)!
+-   **Storytelling**: Erzähle eine (wahre) Geschichte!
 
 # Business Understanding
 
 Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen getestet. Du bekommst nun die Daten und sollst herausfinden, für wen das Produkt besonders gut geeignet ist.
 
-Eine andere Anayse hat bereits ergeben, dass vor allem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) und Kunden ohne Mobile Voice Produkt (mobilevoice_ind == 0) an dem Produkt interessiert sind.
-
-Hypothesen für Kaufinteresse:
-
--   **Kunden mit geringer Internet Usage (bbi_usg_gb)**:\
-    Die durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
-
--   **Kunden ohne Mobile Voice Produkt (mobilevoice_ind == 0)**:\
-    58% der Käufer haben kein Mobile Voice Produkt
-
-Soll das Produkt nur diesen Kunden angeboten werden?
+Von deiner Analyse hängt es ab ob das Produkt auf den Markt kommt und wie es beworben wird.
 
 # Data Understanding
 
@@ -147,7 +117,9 @@ Wir machen uns zuerst einen Überblick über die Variable `buy`
 data %>% describe(buy)
 ```
 
-Ca. 16% von den insgesamt 1000 Kunden haben gekauft (buy == 1)
+Wie viele Kunden haben das Produkt gekauft?
+
+[Jetzt Du! ...]
 
 ## age
 
@@ -159,19 +131,23 @@ Welche Altersverteilung wäre zu erwarten? Was wäre plausibel?
 data %>% describe(age)
 ```
 
-Die Kunden sind zwischen 18 und 93 Jahr alt. Das Durchschnittsalter (mean) beträgt 57.7 Jahre.
+Was sagt uns das Ergebnis?
+
+[Jetzt Du! ...]
 
 Einen besseren Überblick bekommen wir, wenn wir uns das Alter grafisch ausgeben:
 
-```{r}
+```{r fig.height=2.5}
 data %>% explore(age)
 ```
 
-Auf der X-Achse sieht man das Alter (sehr kleine und sehr große Werte werden automatisch ausgeblendet). Der "Hügel" (Histogramm) zeigt an, welche Altersgruppen wie häufig vorkommen. Der "Gipfel" des Hügels liegt hier ca. beim Mittelwert.
+Was sagt uns das Ergebnis?
+
+[Jetzt Du! ...]
 
 Wir können den Mittelwert mit einer Linie einzeichnen:
 
-```{r}
+```{r fig.height=2.5}
 data %>% explore(age) %>% add_line(57.7)
 ```
 
@@ -183,9 +159,13 @@ data %>% explore(age) %>% add_line(57.7)
 
 ## age
 
-```{r}
+```{r fig.height=2.5}
 data %>% explore(age, target = buy)
 ```
+
+Welchen Zusammenhang gibt es zwischen Alter und Kaufverhalten?
+
+[Jetzt Du! ...]
 
 ## [Variable ...]
 
@@ -207,39 +187,21 @@ Der Decision Tree Algorithmus "lernt" welche Kunden eher kaufen. Nun können wir
 
 ```{r include=FALSE}
 model <- data %>%
-  select(age, male_ind, bbi_usg_gb, buy) %>% 
+  select(age, female_ind, bbi_usg_gb, buy) %>% 
   explain_tree(target = buy, out = "model")
 ```
 
 ```{r}
 predict(
   model, 
-  tibble(age = 40, male_ind = 0, bbi_usg_gb = 10)
+  tibble(age = 40, female_ind = 0, bbi_usg_gb = 10)
 )
 ```
 
 Wir erhalten die vorhergesagten Wahrscheinlichkeiten für Nicht-Kauf und Kauf (buy)
 
-## Hypothesen
-
-### Geringe BBI Usage
-
-Eine andere Anayse hat bereits ergeben, dass vor allem Kunden mit geringer Breitband Internet Usage (bbi_usg_gb) an dem Produkt interessiert sind (Durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174).
-
-```{r}
-data %>% filter(buy == 1) %>% describe(bbi_usg_gb)
-```
-
-[Jetzt Du! ...]
-
-### Kein Mobile Voice
-
-Eine andere Analyse hat bereits ergeben, dass vor allem Kunden ohne Mobile Voice an dem Produkt interessiert sind (58% der Käufer haben kein Mobile Voice Produkt).
-
-[Jetzt Du! ...]
-
 # Story Telling
 
-Welchen Kunden soll das Produkt angeboten werden und warum? Erzähle eine "Geschichte", die alle wesentlichen Insights enthält, aber trotzdem für einen Data Science Laien einfach verständlich und nachvollziehbar ist!
+Welchen Kunden soll das Produkt angeboten werden und warum? Erzähle eine "Geschichte", die alle wesentlichen Insights enthält, aber trotzdem für einen Data Science Laien einfach, verständlich und nachvollziehbar ist!
 
 [Jetzt Du! ...]
