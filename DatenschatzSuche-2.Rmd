@@ -42,7 +42,7 @@ Entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrschein
 
 -   Gemeinsames spielerisches Erarbeiten
 -   Wie "denkt" man als Data Scientist / Statistiker
--   Wie kann man mit dem Zufall "rechnen"
+-   Interpretations-"Fallen" erkennen
 
 ## Echtes Gold?
 
@@ -92,7 +92,7 @@ In Datenschatz Suche - Teil 1 wurde ein Produkt ca. von jedem 6. Kunden gekauft 
 
 Nun hat die Produktentwicklung eine Änderung am Produkt vorgenommen, es ist nun ganz rot. Das rote Produkt haben 14 von 60 Test-Kunden gekauft (23,3%) - das ist eine um fast 40% höhere Take-Rate als vorher! Soll die Produktion jetzt umgestellt werden (Investitionskosten von 1 Mio EUR)
 
-Wie kann der Produkt-Kauf auf Würfel "übersetzte" werden?
+Investieren oder doch eine "Falle"?
 
 [Jetzt Du! ...]
 
