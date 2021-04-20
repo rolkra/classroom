@@ -90,7 +90,7 @@ Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben:
 
 Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besonderes großes Kaufinteresse haben:
 
-**Kunden mit MobileVoice **:
+**Kunden mit MobileVoice**:
 
 Bei Kunden mit MobileVoice gibt es 312 Käufer, bei Kunden ohne Mobile Voice sind es nur 186. Daher das Produkt nur Kunden mit MobileVoice anbieten, oder wenn noch nicht vorhanden als Kombi-Paket (MobileVoice + Produkt)  
 
@@ -102,7 +102,7 @@ Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben:
 
 [Jetzt Du! ...]
 
-## Andere Farbe
+## Rote Farbe!
 
 In Datenschatz Suche - Teil 1 wurde ein Produkt ca. von jedem 6. Kunden gekauft - das entspricht der gleichen Wahrscheinlichkeit, wie bei einem Würfel eine 6 zu würfeln (1/6 = 16,7%).
 
