@@ -50,7 +50,7 @@ Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es 
 
 Die 4 häufigsten "Fallen":
 
--   **Unterschiedliche Gruppengröße**:\
+-   **Falscher Bezug**:\
     In Graz gibt es viel mehr Corona Fälle als in Fürstenfeld, daher lieber nicht nach Graz fahren!
 
 -   **Mittelwerte mit Extremwerten**:\
@@ -69,20 +69,36 @@ Gib eine kurze Zusammenfassung:
 
 [Jetzt Du! ...]
 
-## Analyse Produktentwicklung
+## Geringe Internet Usage!
 
 Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besonderes großes Kaufinteresse haben:
 
-Hypothesen für Kaufinteresse:
+**Kunden mit geringer Internet Usage (bbi_usg_gb)**:
 
--   **Kunden mit geringer Internet Usage (bbi_usg_gb)**:\
-    Die durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
-
--   **Kunden ohne Mobile Voice Produkt (mobilevoice_ind == 0)**:\
-    58% der Käufer haben kein Mobile Voice Produkt
+Die durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
 
 Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen?
 Wenn nein, wer ist in welche Falle "getappt"?
+
+Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben:
+`%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)', `filter(buy == 1)`
+
+[Jetzt Du! ...]
+
+
+## Mobile Voice!
+
+Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besonderes großes Kaufinteresse haben:
+
+**Kunden mit MobileVoice **:
+
+Bei Kunden mit MobileVoice gibt es 312 Käufer, bei Kunden ohne Mobile Voice sind es nur 186. Daher das Produkt nur Kunden mit MobileVoice anbieten, oder wenn noch nicht vorhanden als Kombi-Paket (MobileVoice + Produkt)  
+
+Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen?
+Wenn nein, wer ist in welche Falle "getappt"?
+
+Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben:
+`%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)', `filter(buy == 1)`
 
 [Jetzt Du! ...]
 
@@ -100,10 +116,12 @@ Investieren oder doch eine "Falle"?
 
 Designe dir deinen eigenen Würfel:
 
-```{r fig.height=1, fig.width=6}
-roll_dice(times = 6, rounds = 1) %>% 
-  plot_dice(fill = "blue", fill_success = "darkblue", 
-            point_color = "white", line_color = "grey")
+```{r}
+dice <- roll_dice(times = 6, rounds = 10) 
+sechser <- sum(dice$success)
+dice %>% 
+  plot_dice(fill = "coral", fill_success = "red", point_color = "white") + 
+  ggtitle(paste(sechser, "x Sechs"))
 ```
 
 [Jetzt Du! ...]

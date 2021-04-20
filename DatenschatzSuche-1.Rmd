@@ -79,7 +79,7 @@ Einige Funktionen die wir verwenden:
 
 | Funktion         | Bedeutung                           |
 |------------------|-------------------------------------|
-| `%>%`            | "und dann" - Operator               |
+| `%>%`            | "und dann mache" - Operator         |
 | `describe()`     | Beschreiben                         |
 | `explore()`      | Grafisch erforschen                 |
 | `add_line()`     | Eine Linie in Grafik einfügen       |
@@ -106,7 +106,7 @@ Von deiner Analyse hängt es ab ob das Produkt auf den Markt kommt und wie es be
 Die Daten sind als `data` abgespeichert. Die Variable `buy` enthält die Info, ob der Kunde ein Kaufinteresse hat (buy == 1) oder nicht (buy == 0).
 
 ```{r message=FALSE}
-data <- read_csv("data-buy.csv")
+data <- read_csv("data-buy.csv") %>% select(-event_web)
 ```
 
 ## buy
@@ -148,7 +148,7 @@ Was sagt uns das Ergebnis?
 Wir können den Mittelwert mit einer Linie einzeichnen:
 
 ```{r fig.height=2.5}
-data %>% explore(age) %>% add_line(57.7)
+data %>% explore(age) %>% add_line(52)
 ```
 
 ## [Variable ...]

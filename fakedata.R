@@ -57,8 +57,8 @@ fakedata = function(obs = 1000,
                              sample(c(0, 1), obs, replace = TRUE, prob = c(0.4, 0.6)),
                              sample(c(0, 1), obs, replace = TRUE, prob = c(0.8, 0.2))
       ),
-      mobilevoice_ind = sample(c(0, 1), obs, replace = TRUE, prob = c(0.6, 0.4)),
-      mobiledata_ind = sample(c(0, 1), obs, replace = TRUE, prob = c(0.2, 0.8)),
+      mobilevoice_ind = sample(c(0, 1), obs, replace = TRUE, prob = c(0.4, 0.6)),
+      mobiledata_ind = sample(c("NO","MOBILE STICK", "BUSINESS"), obs, replace = TRUE, prob = c(0.5, 0.3, 0.2)),
       bbi_speed_ind = ifelse(age > 60,
                              sample(c(0, 1), obs, replace = TRUE, prob = c(0.9, 0.1)),
                              sample(c(0, 1), obs, replace = TRUE, prob = c(0.2, 0.8))
