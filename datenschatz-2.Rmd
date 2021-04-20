@@ -64,8 +64,11 @@ Die 4 häufigsten "Fallen":
 
 # Datenschatz Suche 1
 
-Was waren die Zusammenhänge, die wir gefunden haben?
-Gib eine kurze Zusammenfassung:
+```{r message=FALSE}
+data <- read_csv("data-buy.csv") %>% select(-event_web)
+```
+
+Was waren die Zusammenhänge, die wir gefunden haben? Gib eine kurze Zusammenfassung:
 
 [Jetzt Du! ...]
 
@@ -77,14 +80,11 @@ Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besond
 
 Die durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
 
-Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen?
-Wenn nein, wer ist in welche Falle "getappt"?
+Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
 
-Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben:
-`%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)', `filter(buy == 1)`
+Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben: `%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)`, `filter(buy == 1)`
 
 [Jetzt Du! ...]
-
 
 ## Mobile Voice!
 
@@ -92,13 +92,11 @@ Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besond
 
 **Kunden mit MobileVoice**:
 
-Bei Kunden mit MobileVoice gibt es 312 Käufer, bei Kunden ohne Mobile Voice sind es nur 186. Daher das Produkt nur Kunden mit MobileVoice anbieten, oder wenn noch nicht vorhanden als Kombi-Paket (MobileVoice + Produkt)  
+Bei Kunden mit MobileVoice gibt es 312 Käufer, bei Kunden ohne Mobile Voice sind es nur 186. Daher das Produkt nur Kunden mit MobileVoice anbieten, oder wenn noch nicht vorhanden als Kombi-Paket (MobileVoice + Produkt)
 
-Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen?
-Wenn nein, wer ist in welche Falle "getappt"?
+Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
 
-Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben:
-`%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)', `filter(buy == 1)`
+Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben: `%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)',`filter(buy == 1)\`
 
 [Jetzt Du! ...]
 
@@ -153,4 +151,3 @@ Wahrscheinlichkeit zufällig \>= 14 mal eine 6 zu würfeln
 ```{r}
 binom(60, 1/6) %>% plot_binom(highlight = 14:30)
 ```
-
