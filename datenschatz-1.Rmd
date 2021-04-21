@@ -65,7 +65,11 @@ Du kannst Text und Code direkt ändern.
 print("Auf geht's zur Datenschatz Suche!")
 ```
 
-Den Code kann du ausführen, indem du in den Text klickst und danach auf den grünen "Play Button" klickst. Achte auf die Reihenfolge.
+```{r}
+1 + 1
+```
+
+Den Code kann du ausführen, indem du in den Code-Bereich klickst und danach auf den grünen "Play Button" klickst. Achte auf die Reihenfolge.
 
 [Jetzt Du! ...]
 
@@ -73,7 +77,13 @@ Du kannst den Code auch einfach "kopieren" (kopiere auch das "{r}" mit)
 
 [Jetzt Du! ...]
 
-## Funktionen
+**Du bekommst eine Fehlermeldung?**
+
+Prüfe ob der Code richtig ist.\
+Bei Fehlermeldungen wie *Error in plot.new() ...* oder *Error in file(file, "wb")* hilft `Session` \> `Restart R and Clear Output`
+
+## 
+Funktionen
 
 Einige Funktionen die wir verwenden:
 
@@ -155,8 +165,9 @@ Was sagt uns das Ergebnis?
 
 Wir können den Mittelwert mit einer Linie einzeichnen:
 
-```{r fig.height=2.5}
-data %>% explore(age) %>% add_line(52)
+```{r}
+#data %>% explore(age) %>% add_line(57)
+iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) + geom_point()
 ```
 
 ## [Variable ...]
