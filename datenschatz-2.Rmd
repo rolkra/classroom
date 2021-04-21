@@ -78,7 +78,7 @@ Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besond
 
 **Kunden mit geringer Internet Usage (bbi_usg_gb)**:
 
-Die durchschnittliche bbi_usg_gb bei Kaufinteresse = 71, ohne Kaufinteresse = 257.
+Die durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
 
 Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
 
@@ -92,7 +92,7 @@ Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besond
 
 **Kunden mit MobileVoice**:
 
-Bei Kunden mit MobileVoice gibt es 320 Käufer, bei Kunden ohne Mobile Voice sind es nur 186. Daher das Produkt nur Kunden mit MobileVoice anbieten, oder wenn noch nicht vorhanden als Kombi-Paket (MobileVoice + Produkt)
+Bei Kunden mit MobileVoice gibt es 92 Käufer, bei Kunden ohne Mobile Voice sind es nur 66. Daher das Produkt nur Kunden mit MobileVoice anbieten, oder wenn noch nicht vorhanden als Kombi-Paket (MobileVoice + Produkt)
 
 Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
 

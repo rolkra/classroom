@@ -161,7 +161,7 @@ Was sagt uns das Ergebnis?
 Wir können den Mittelwert mit einer Linie einzeichnen:
 
 ```{r fig.height=2.5}
-data %>% explore(age) %>% add_line(57)
+data %>% explore(age) %>% add_line(58)
 ```
 
 ## [Variable ...]
