@@ -77,14 +77,22 @@ Du kannst den Code auch einfach "kopieren" (kopiere auch das "{r}" mit)
 
 Einige Funktionen die wir verwenden:
 
++------------------+-------------------------------------+
 | Funktion         | Bedeutung                           |
-|------------------|-------------------------------------|
-| `%>%`            | "und dann mache" - Operator         |
++==================+=====================================+
+| `%>%`            | "und dann mache" - Operator \       |
+|                  | `<strg> <shift> m`                  |
++------------------+-------------------------------------+
 | `describe()`     | Beschreiben                         |
++------------------+-------------------------------------+
 | `explore()`      | Grafisch erforschen                 |
++------------------+-------------------------------------+
 | `add_line()`     | Eine Linie in Grafik einfügen       |
++------------------+-------------------------------------+
 | `filter()`       | Filtern (welche Kunden behalten?)   |
++------------------+-------------------------------------+
 | `explain_tree()` | Erkläre mit einem Entscheidungsbaum |
++------------------+-------------------------------------+
 
 ## Prozess
 
