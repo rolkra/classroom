@@ -62,10 +62,6 @@ Notebooks sind ein typisches Data Science Werkzeug. Sie enthalten Code, das Erge
 Du kannst Text und Code direkt ändern.
 
 ```{r}
-print("Auf geht's zur Datenschatz Suche!")
-```
-
-```{r}
 1 + 1
 ```
 
@@ -82,8 +78,7 @@ Du kannst den Code auch einfach "kopieren" (kopiere auch das "{r}" mit)
 Prüfe ob der Code richtig ist.\
 Bei Fehlermeldungen wie *Error in plot.new() ...* oder *Error in file(file, "wb")* hilft `Session` \> `Restart R and Clear Output`
 
-## 
-Funktionen
+## Funktionen
 
 Einige Funktionen die wir verwenden:
 
