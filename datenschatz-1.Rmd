@@ -80,7 +80,7 @@ Einige Funktionen die wir verwenden:
 +------------------+-------------------------------------+
 | Funktion         | Bedeutung                           |
 +==================+=====================================+
-| `%>%`            | "und dann mache" - Operator \       |
+| `%>%`            | "und dann mache" - Operator\        |
 |                  | `<strg> <shift> m`                  |
 +------------------+-------------------------------------+
 | `describe()`     | Beschreiben                         |

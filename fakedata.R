@@ -103,5 +103,6 @@ fakedata = function(obs = 1000,
   
 } # fakedata
 
-data <- fakedata(obs = 1000, target_name = "buy")
+data <- fakedata(obs = 1000, target_name = "buy", target1_prob = 1/6, seed = 112)
+data %>% explore(buy)
 write.csv(data, "data-buy.csv", row.names = FALSE)
