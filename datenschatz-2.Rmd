@@ -58,10 +58,10 @@ Für eine gute Datengetriebene Entscheidungen braucht man:
 Die 4 häufigsten "Fallen":
 
 -   **Falscher Bezug**:\
-    In Graz gibt es viel mehr Corona Fälle als in Fürstenfeld, daher lieber nicht nach Graz fahren!
+    In Graz gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nicht nach Graz fahren!
 
 -   **Mittelwerte mit Extremwerten**:\
-    100 Kunden haben je ca 1 EUR Umsatz, 1 Kunde hat 1000 EUR. Ein typischer Kunde diese Kundengruppe hat ca 11 EUR (Mittelwert)!
+    100 Kunden haben je ca 1 EUR Umsatz, 1 Kunde hat 1000 EUR (Mittelwert 11 EUR). Ein typischer Kunde diese Kundengruppe hat also ca 11 EUR Umsatz!
 
 -   **Statistische Signifikanz vergessen**:\
     Blind Verkostung Cola Light vs Cola Zero: bei 6 von 10 Fällen richtig! Beweis, dass Unterschied erkannt wird, weil mehr als die Hälfte richtig!
