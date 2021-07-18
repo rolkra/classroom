@@ -173,3 +173,9 @@ Wenn du das Programmieren in R lernen möchtest hier ein paar Empfehlungen:
 
 -   Statistik mit R (Advanced)\
     <https://bookdown.org/speegled/foundations-of-statistics/>
+    
+## Data Driven Decision Making
+
+- <https://www.datapine.com/blog/data-driven-decision-making-in-businesses>
+
+- <https://blog.bismart.com/en/8-tips-for-data-driven-decisions>
