@@ -27,9 +27,9 @@ add_line <- function(
 
 ![](images/treasure-map-2.jpg){width="800"}
 
-**Sind Muster, die wir in den Daten finden ein "Datenschatz" oder nur "Zufallsrauschen"?**
+## Analyse-Ergebnisse optimal für datengetriebene Entscheidungen nutzen!
 
-Entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrscheinlichkeitsrechnung (z.B statistische Signifikanz) ganz ohne mathematische Formeln. Wir führen gemeinsam statistische Experimente durch und verwenden dafür das Data Science Tool R/RStudio (über Webbrowser). Alles was du brauchst sind Interesse am Thema und ein Computer mit Teams und Chrome- oder Firefox-Browser. Keine Statistik und Mathematik Vorkenntnisse notwendig.
+Lerne "Daten Driven Decision Making" in der Praxis kennen und entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrscheinlichkeitsrechnung (z.B statistische Signifikanz) ganz ohne mathematische Formeln. Wir führen gemeinsam statistische Experimente durch und verwenden dafür das Data Science Tool R/RStudio (über Webbrowser). Alles was du brauchst sind Interesse am Thema und ein Computer mit Teams und Chrome- oder Firefox-Browser. Keine Statistik und Mathematik Vorkenntnisse notwendig.
 
 **Nicht-Ziele:**
 
@@ -41,12 +41,19 @@ Entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrschein
 **Ziele**
 
 -   Gemeinsames spielerisches Erarbeiten
--   Wie "denkt" man als Data Scientist / Statistiker
+-   Was muss man als (data driven) "Entscheider" beachten
 -   Interpretations-"Fallen" erkennen
 
 ## Echtes Gold?
 
 Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es ein echter Datenschatz mit Goldmünzen, oder enhält der Schatz doch nur "Plastik-Münzen"?
+
+Für eine gute Datengetriebene Entscheidungen braucht man:
+
+- Klare Fragestellung
+- Gute Daten
+- Plausible Muster (Insights)
+- Sinnvolle Schlussfolgerungen
 
 Die 4 häufigsten "Fallen":
 
@@ -78,7 +85,7 @@ Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besond
 
 **Kunden mit geringer Internet Usage (bbi_usg_gb)**:
 
-Die durchschnittliche bbi_usg_gb bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
+Die durchschnittliche bbi_usg_gb (Broad Band Internet Usage in Gigabyte) bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
 
 Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
 
