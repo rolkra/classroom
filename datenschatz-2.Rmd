@@ -27,7 +27,7 @@ add_line <- function(
 
 ![](images/treasure-map-2.jpg){width="800"}
 
-## Analyse-Ergebnisse optimal für datengetriebene Entscheidungen nutzen!
+**Analyse-Ergebnisse optimal für datengetriebene Entscheidungen nutzen!**
 
 Lerne "Daten Driven Decision Making" in der Praxis kennen und entdecke auf spielerische Art grundlegende Konzepte der Statistik und Wahrscheinlichkeitsrechnung (z.B statistische Signifikanz) ganz ohne mathematische Formeln. Wir führen gemeinsam statistische Experimente durch und verwenden dafür das Data Science Tool R/RStudio (über Webbrowser). Alles was du brauchst sind Interesse am Thema und ein Computer mit Teams und Chrome- oder Firefox-Browser. Keine Statistik und Mathematik Vorkenntnisse notwendig.
 
@@ -55,10 +55,10 @@ Für eine gute Datengetriebene Entscheidungen braucht man:
 - Plausible Muster (Insights)
 - Sinnvolle Schlussfolgerungen
 
-Die 4 häufigsten "Fallen":
+## Häufigste "Fallen":
 
 -   **Falscher Bezug**:\
-    In Graz gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nicht nach Graz fahren!
+    In Graz gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
 
 -   **Mittelwerte mit Extremwerten**:\
     100 Kunden haben je ca 1 EUR Umsatz, 1 Kunde hat 1000 EUR (Mittelwert 11 EUR). Ein typischer Kunde diese Kundengruppe hat also ca 11 EUR Umsatz!
