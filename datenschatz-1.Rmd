@@ -27,7 +27,7 @@ add_line <- function(
 
 ![](images/treasure-map-1.jpg){width="800"}
 
-**Du interessierst dich für Advanced Analytics und Data Science und möchtest es einfach mal ausprobieren?**
+**Advanced Analytics und Data Science einfach ausprobieren!**
 
 Entdecke auf spielerische Art grundlegende Advanced Analytics Konzepte und Arbeitsweisen. Wir suchen gemeinsam nach spannenden Mustern in Daten und verwenden dafür das Data Science Tool R/RStudio (über Webbrowser). Alles was du brauchst sind Interesse am Thema und ein Computer mit Teams und Chrome- oder Firefox-Browser. Keine Programmiererfahrung notwendig.
 
