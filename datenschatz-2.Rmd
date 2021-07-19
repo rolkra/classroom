@@ -58,7 +58,7 @@ Für eine gute Datengetriebene Entscheidungen braucht man:
 ## Häufigste "Fallen":
 
 -   **Falscher Bezug**:\
-    In Graz gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
+    In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
 
 -   **Mittelwerte mit Extremwerten**:\
     100 Kunden haben je ca 1 EUR Umsatz, 1 Kunde hat 1000 EUR (Mittelwert 11 EUR). Ein typischer Kunde diese Kundengruppe hat also ca 11 EUR Umsatz!
