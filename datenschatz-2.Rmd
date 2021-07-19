@@ -46,7 +46,9 @@ Lerne "Daten Driven Decision Making" in der Praxis kennen und entdecke auf spiel
 
 ## Echtes Gold?
 
-Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es ein echter Datenschatz mit Goldmünzen, oder enhält der Schatz doch nur "Plastik-Münzen"?
+Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es ein echter Datenschatz mit Goldmünzen, oder enthält der Schatz doch nur "Plastik-Münzen"?
+
+Meist werden datengetriebene Entscheidungen nicht vom Data Scientist selbst getroffen, sondern von einem "Decision Maker", der die "Story" und die Schlussfolgerungen kritisch hinterfragen muss.
 
 Für eine gute Datengetriebene Entscheidungen braucht man:
 
@@ -55,7 +57,51 @@ Für eine gute Datengetriebene Entscheidungen braucht man:
 - Plausible Muster (Insights)
 - Sinnvolle Schlussfolgerungen
 
+![](images/decision-making.jpg){width="800"}
+
 ## Häufigste "Fallen":
+
+### Wien oder Fürstenfeld?
+
+In welcher Stadt (Wien oder Fürstenfeld) ist die Corona-Gefahr geringer?
+
+In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren! 
+
+Datenquelle: Statistik Austria (Corona-Fälle pro Stadt)
+
+![](images/DDDM-process.jpg){width="800"}
+[Jetzt Du! ...]
+
+### Prepaid-Umsatz
+
+Wie viel Umsatz hat ein typischer Prepaid-Kunde?
+
+Der durchschnittliche Prepaid-Umsatz ist 11 EUR.
+
+Datenquelle: 100 Referenzkunden Prepaid, Mittelwert (100 Kunden mit ca. 1 EUR, 1 Kunde mit 1000 EUR)
+
+![](images/DDDM-process.jpg){width="800"}
+[Jetzt Du! ...]
+
+### Cola Light oder Zero?
+
+Schmecken Cola Light und Cola Zero unterschiedlich?
+
+Blind Verkostung Cola Light vs Cola Zero mit einer Testperson: bei 6 von 10 Fällen richtig gelegen! Beweis, dass Unterschied erkannt wird, weil mehr als die Hälfte richtig!
+
+![](images/DDDM-process.jpg){width="800"}
+[Jetzt Du! ...]
+
+### Mehr Gehalt
+
+Wie bekommt man mehr Gehalt?
+
+Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
+
+![](images/DDDM-process.jpg){width="800"}
+[Jetzt Du! ...]
+
+### Zusammenfassung:
 
 -   **Falscher Bezug**:\
     In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
