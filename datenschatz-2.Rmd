@@ -72,16 +72,31 @@ Datenquelle: Statistik Austria (Corona-Fälle pro Stadt)
 ![](images/DDDM-process.jpg){width="800"}
 [Jetzt Du! ...]
 
+```{r}
+corona <- data.frame(
+  city = c("Wien", "Fürstenfeld"),
+  cases = c(100, 50),
+  pop_100k = c(19, 0.6)
+)
+corona
+```
+
+
 ### Prepaid-Umsatz
 
 Wie viel Umsatz hat ein typischer Prepaid-Kunde?
 
 Der durchschnittliche Prepaid-Umsatz ist 11 EUR.
 
-Datenquelle: 100 Referenzkunden Prepaid, Mittelwert (100 Kunden mit ca. 1 EUR, 1 Kunde mit 1000 EUR)
+Datenquelle: 100 Referenzkunden Prepaid (99 Kunden mit ca 1 EUR, und 1 Kunde mit 1000 EUR)
 
 ![](images/DDDM-process.jpg){width="800"}
 [Jetzt Du! ...]
+
+```{r}
+umsatz <- c(rep(1, 99), 1000)
+umsatz %>% mean() %>% round()
+```
 
 ### Cola Light oder Zero?
 
@@ -92,6 +107,14 @@ Blind Verkostung Cola Light vs Cola Zero mit einer Testperson: bei 6 von 10 Fäl
 ![](images/DDDM-process.jpg){width="800"}
 [Jetzt Du! ...]
 
+```{r}
+flip_coin(times = 10, agg = TRUE)
+```
+
+```{r}
+flip_coin(times = 10, rounds = 10000, agg = TRUE) %>% explore_bar(success)
+```
+
 ### Mehr Gehalt
 
 Wie bekommt man mehr Gehalt?
@@ -101,7 +124,7 @@ Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst 
 ![](images/DDDM-process.jpg){width="800"}
 [Jetzt Du! ...]
 
-### Zusammenfassung:
+### Zusammenfassung
 
 -   **Falscher Bezug**:\
     In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
