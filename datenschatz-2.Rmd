@@ -59,7 +59,7 @@ Für eine gute Datengetriebene Entscheidungen braucht man:
 
 ![](images/decision-making.jpg){width="800"}
 
-## Häufigste "Fallen":
+## Häufigste "Fallen"
 
 ### Wien oder Fürstenfeld?
 
@@ -67,7 +67,7 @@ In welcher Stadt (Wien oder Fürstenfeld) ist die Corona-Gefahr geringer?
 
 In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren! 
 
-Datenquelle: Statistik Austria (Corona-Fälle pro Stadt)
+Datenquelle: Sozialministerium (Corona-Fälle pro Stadt)
 
 ![](images/DDDM-process.jpg){width="800"}
 [Jetzt Du! ...]
@@ -86,7 +86,7 @@ corona
 
 Wie viel Umsatz hat ein typischer Prepaid-Kunde?
 
-Der durchschnittliche Prepaid-Umsatz ist 11 EUR.
+Ein typischer Prepaid Kunde hat 11 EUR.
 
 Datenquelle: 100 Referenzkunden Prepaid (99 Kunden mit ca 1 EUR, und 1 Kunde mit 1000 EUR)
 
@@ -102,7 +102,7 @@ umsatz %>% mean() %>% round()
 
 Schmecken Cola Light und Cola Zero unterschiedlich?
 
-Blind Verkostung Cola Light vs Cola Zero mit einer Testperson: bei 6 von 10 Fällen richtig gelegen! Beweis, dass Unterschied erkannt wird, weil mehr als die Hälfte richtig!
+Experiment: Blind Verkostung Cola Light vs Cola Zero mit einer Testperson. Bei 6 von 10 Fällen richtig gelegen! Beweis, dass Unterschied erkannt wird, weil mehr als die Hälfte richtig!
 
 ![](images/DDDM-process.jpg){width="800"}
 [Jetzt Du! ...]
@@ -112,7 +112,8 @@ flip_coin(times = 10, agg = TRUE)
 ```
 
 ```{r}
-flip_coin(times = 10, rounds = 10000, agg = TRUE) %>% explore_bar(success)
+flip_coin(times = 10, rounds = 10000, agg = TRUE) %>% 
+  explore_bar(success, num = FALSE)
 ```
 
 ### Mehr Gehalt
@@ -125,6 +126,8 @@ Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst 
 [Jetzt Du! ...]
 
 ### Zusammenfassung
+
+Diese 4 Fallen kommen besonders häufig vor:
 
 -   **Falscher Bezug**:\
     In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
@@ -227,3 +230,17 @@ Wahrscheinlichkeit zufällig \>= 14 mal eine 6 zu würfeln
 ```{r}
 binom(60, 1/6) %>% plot_binom(highlight = 14:30)
 ```
+
+# Experimental Design
+
+Um eine Frage optimal datengetrieben beantworten zu können, kann es notwendig sein, zuerst die "passenden" Daten dafür im Rahmen eines "Experimentes" zu generieren.
+
+Beispiel: Ist der Rote oder der Graue Staubsauger bei den Kunden beliebter?
+
+Wird im Februar nur der Graue Staubsauger verkauft, und im März nur der Rote Staubsauger, wie soll man unterschiedliche Verkaufszahlen interpretieren? Wurden mehr Rote Staubsauger verkauft, weil sich "Rot" besser verkauft? Oder weil der Monat März mehr Tage hat als der Februar? Oder weil im März die Corona-Beschränkungen weiter gelockert wurden?
+
+Mit so einem "Experimental-Design" ist es unmöglich, eine klare Schlussfolgerung zu ziehen?
+
+Daher: bereits bei der Planung des "Experiments" sollte klar sein, welche Schlussfolgerungen man ableiten möchte. Durch das Design des Experiments werden die genötigten Daten generiert, die diese Schlussfolgerungen ermöglichen.
+
+Optimales "Expermental-Design": z.B. Kunden im Rahmen einer Kampagne zufällig in die Gruppen "Grau" und "Rot" einteilen, und den jeweiligen Staubsauger anbieten. Die Kundengruppen müssen groß genug sein, dass sie am Ende der Kampagne eine statistisch signikikante Aussage zulassen. 
