@@ -147,7 +147,7 @@ Diese 4 Fallen kommen besonders häufig vor:
 data <- read_csv("data-buy.csv") %>% select(-event_web)
 ```
 
-Was waren die Zusammenhänge, die wir gefunden haben? Gib eine kurze Zusammenfassung:
+Was waren die Zusammenhänge, die wir gefunden haben? Was würdest du dem "Decision Maker" vorschlagen?
 
 [Jetzt Du! ...]
 
@@ -243,4 +243,4 @@ Mit so einem "Experimental-Design" ist es unmöglich, eine klare Schlussfolgerun
 
 Daher: bereits bei der Planung des "Experiments" sollte klar sein, welche Schlussfolgerungen man ableiten möchte. Durch das Design des Experiments werden die genötigten Daten generiert, die diese Schlussfolgerungen ermöglichen.
 
-Optimales "Expermental-Design": z.B. Kunden im Rahmen einer Kampagne zufällig in die Gruppen "Grau" und "Rot" einteilen, und den jeweiligen Staubsauger anbieten. Die Kundengruppen müssen groß genug sein, dass sie am Ende der Kampagne eine statistisch signikikante Aussage zulassen. 
+Optimales "Expermental-Design": z.B. Kunden im Rahmen einer Kampagne zufällig in die Gruppen "Grau" und "Rot" einteilen, und den jeweiligen Staubsauger anbieten. Die Kundengruppen müssen groß genug sein, dass sie am Ende der Kampagne eine statistisch signifikante Aussage zulassen. 
