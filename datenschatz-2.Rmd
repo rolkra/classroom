@@ -50,6 +50,10 @@ Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es 
 
 Meist werden datengetriebene Entscheidungen nicht vom Data Scientist selbst getroffen, sondern von einem "Decision Maker", der die "Story" und die Schlussfolgerungen kritisch hinterfragen muss.
 
+Nicht immer funktioniert das:
+
+![](images/DDDM-failure.jpg){width="350"}
+
 Für eine gute Datengetriebene Entscheidungen braucht man:
 
 - Klare Fragestellung
