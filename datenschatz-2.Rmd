@@ -243,10 +243,19 @@ Um eine Frage optimal datengetrieben beantworten zu können, kann es notwendig s
 
 Beispiel: Ist der Rote oder der Graue Staubsauger bei den Kunden beliebter?
 
-Wird im Februar nur der Graue Staubsauger verkauft, und im März nur der Rote Staubsauger, wie soll man unterschiedliche Verkaufszahlen interpretieren? Wurden mehr Rote Staubsauger verkauft, weil sich "Rot" besser verkauft? Oder weil der Monat März mehr Tage hat als der Februar? Oder weil im März die Corona-Beschränkungen weiter gelockert wurden?
+![](images/staubsauger.png){width="500"}
 
-Mit so einem "Experimental-Design" ist es unmöglich, eine klare Schlussfolgerung zu ziehen?
+Wenn keine Verkaufszahlen nach Farbe vorliegen, müssen wir erst Daten im Rahmen eines Experimentes generieren.
+
+![](images/staubsauger-experiment1.png){width="500"}
+Ist dieses "Experimental Design" sinnvoll?
+
+Wird im November 2020 nur der Graue Staubsauger verkauft, und im Februar 2021 nur der Rote Staubsauger, wie soll man unterschiedliche Verkaufszahlen interpretieren? Wurden mehr Rote Staubsauger verkauft, weil sich "Rot" besser verkauft? Oder weil im Februar 2021 die Corona-Beschränkungen weiter gelockert wurden und mehr Leute in die Shops gegangen sind?
+
+Mit so einem "Experimental-Design" ist es unmöglich, eine klare Schlussfolgerung zu ziehen!
 
 Daher: bereits bei der Planung des "Experiments" sollte klar sein, welche Schlussfolgerungen man ableiten möchte. Durch das Design des Experiments werden die genötigten Daten generiert, die diese Schlussfolgerungen ermöglichen.
 
-Optimales "Expermental-Design": z.B. Kunden im Rahmen einer Kampagne zufällig in die Gruppen "Grau" und "Rot" einteilen, und den jeweiligen Staubsauger anbieten. Die Kundengruppen müssen groß genug sein, dass sie am Ende der Kampagne eine statistisch signifikante Aussage zulassen. 
+![](images/staubsauber-experiment2.png){width="500"}
+
+Optimales "Expermental-Design": z.B. Kunden im Rahmen einer Kampagne zufällig in die Gruppen "Grau" und "Rot" einteilen, und den jeweiligen Staubsauger anbieten. Die Kundengruppen müssen groß genug sein, dass sie am Ende der Kampagne eine statistisch signifikante Aussage zulassen.
