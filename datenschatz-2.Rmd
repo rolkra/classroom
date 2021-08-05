@@ -229,7 +229,7 @@ roll_dice(times = 60, rounds = 1000, agg = TRUE) %>%
   add_line(1)  # change to correct value
 ```
 
-Wo liegt der Wert 14? Zeichne ihn ein!
+Wo liegt der Wert 14 (14 mal ein 6er)? Zeichne ihn ein!
 
 [Jetzt Du! ...]
 
