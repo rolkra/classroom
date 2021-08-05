@@ -46,9 +46,11 @@ Lerne "Daten Driven Decision Making" in der Praxis kennen und entdecke auf spiel
 
 ## Echtes Gold?
 
-Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es ein echter Datenschatz mit Goldmünzen, oder enthält der Schatz doch nur "Plastik-Münzen"?
+Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es ein echter Datenschatz mit Goldmünzen, oder enthält der Schatz doch nur "Plastik-Münzen"? 
 
-Meist werden datengetriebene Entscheidungen nicht vom Data Scientist selbst getroffen, sondern von einem "Decision Maker", der die "Story" und die Schlussfolgerungen kritisch hinterfragen muss.
+Und was machen wir mit dem Datenschatz? Verwenden wir ihn für etwas sinnvolles, das uns im Business weiter bringt, oder wird er einfach wieder "vergraben"?
+
+Meist werden Entscheidungen nicht vom Data Scientist selbst getroffen, sondern von einem "Decision Maker", der datengetrieben agieren sollte.
 
 Nicht immer funktioniert das:
 
@@ -220,6 +222,12 @@ roll_dice(times = 60, rounds = 1000, agg = TRUE) %>% explore(success)
 Zeichne den "Erwartungswert" ein (was ist der wahrscheinlichste Wert)
 
 [Jetzt Du! ...]
+
+```{r fig.height=2.5}
+roll_dice(times = 60, rounds = 1000, agg = TRUE) %>% 
+  explore(success) %>% 
+  add_line(1)  # change to correct value
+```
 
 Wo liegt der Wert 14? Zeichne ihn ein!
 
