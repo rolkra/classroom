@@ -223,9 +223,9 @@ Zeichne den "Erwartungswert" ein (was ist der wahrscheinlichste Wert)
 
 [Jetzt Du! ...]
 
-```{r fig.height=2.5}
+```{r fig.width=6, fig.height=2.5}
 roll_dice(times = 60, rounds = 1000, agg = TRUE) %>% 
-  explore(success) %>% 
+  explore_bar(success) %>% 
   add_line(1)  # change to correct value
 ```
 
@@ -256,6 +256,7 @@ Beispiel: Ist der Rote oder der Graue Staubsauger bei den Kunden beliebter?
 Wenn keine Verkaufszahlen nach Farbe vorliegen, müssen wir erst Daten im Rahmen eines Experimentes generieren.
 
 ![](images/staubsauger-experiment1.png){width="500"}
+
 Ist dieses "Experimental Design" sinnvoll?
 
 Wird im November 2020 nur der Graue Staubsauger verkauft, und im Februar 2021 nur der Rote Staubsauger, wie soll man unterschiedliche Verkaufszahlen interpretieren? Wurden mehr Rote Staubsauger verkauft, weil sich "Rot" besser verkauft? Oder weil im Februar 2021 die Corona-Beschränkungen weiter gelockert wurden und mehr Leute in die Shops gegangen sind?
