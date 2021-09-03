@@ -149,45 +149,7 @@ Diese 4 Fallen kommen besonders häufig vor:
 -   **Korrelation mit Kausalität verwechseln**:\
     Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
 
-# Datenschatz Suche 1
-
-```{r message=FALSE}
-data <- read_csv("data-buy.csv") %>% select(-event_web)
-```
-
-Was waren die Zusammenhänge, die wir gefunden haben? Was würdest du dem "Decision Maker" vorschlagen?
-
-[Jetzt Du! ...]
-
-## Geringe Internet Usage!
-
-Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besonderes großes Kaufinteresse haben:
-
-**Kunden mit geringer Internet Usage (bbi_usg_gb)**:
-
-Die durchschnittliche bbi_usg_gb (Broad Band Internet Usage in Gigabyte) bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
-
-Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
-
-Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben: `%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)`, `filter(buy == 1)`
-
-[Jetzt Du! ...]
-
-## Mobile Voice!
-
-Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besonderes großes Kaufinteresse haben:
-
-**Kunden mit MobileVoice**:
-
-Bei Kunden mit MobileVoice gibt es 92 Käufer, bei Kunden ohne Mobile Voice sind es nur 66. Daher das Produkt nur Kunden mit MobileVoice anbieten, oder wenn noch nicht vorhanden als Kombi-Paket (MobileVoice + Produkt)
-
-Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
-
-Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben: `%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)`, `filter(buy == 1)`
-
-[Jetzt Du! ...]
-
-## Rote Farbe!
+# Staubsauger Farbe!
 
 In Datenschatz Suche - Teil 1 wurde ein Produkt ca. von jedem 6. Kunden gekauft - das entspricht der gleichen Wahrscheinlichkeit, wie bei einem Würfel eine 6 zu würfeln (1/6 = 16,7%).
 
@@ -197,7 +159,31 @@ Investieren oder doch eine "Falle"?
 
 [Jetzt Du! ...]
 
-# Statistische Signifikanz
+## Experimental Design
+
+Um eine Frage optimal datengetrieben beantworten zu können, kann es notwendig sein, zuerst die "passenden" Daten dafür im Rahmen eines "Experimentes" zu generieren.
+
+Beispiel: Ist der Rote oder der Graue Staubsauger bei den Kunden beliebter?
+
+![](images/staubsauger.png){width="500"}
+
+Wenn keine Verkaufszahlen nach Farbe vorliegen, müssen wir erst Daten im Rahmen eines Experimentes generieren.
+
+![](images/staubsauger-experiment1.png){width="500"}
+
+Ist dieses "Experimental Design" sinnvoll?
+
+Wird im November 2020 nur der Graue Staubsauger verkauft, und im Februar 2021 nur der Rote Staubsauger, wie soll man unterschiedliche Verkaufszahlen interpretieren? Wurden mehr Rote Staubsauger verkauft, weil sich "Rot" besser verkauft? Oder weil im Februar 2021 die Corona-Beschränkungen weiter gelockert wurden und mehr Leute in die Shops gegangen sind?
+
+Mit so einem "Experimental-Design" ist es unmöglich, eine klare Schlussfolgerung zu ziehen!
+
+Daher: bereits bei der Planung des "Experiments" sollte klar sein, welche Schlussfolgerungen man ableiten möchte. Durch das Design des Experiments werden die genötigten Daten generiert, die diese Schlussfolgerungen ermöglichen.
+
+![](images/staubsauber-experiment2.png){width="500"}
+
+Optimales "Expermental-Design": z.B. Kunden im Rahmen einer Kampagne zufällig in die Gruppen "Grau" und "Rot" einteilen, und den jeweiligen Staubsauger anbieten. Die Kundengruppen müssen groß genug sein, dass sie am Ende der Kampagne eine statistisch signifikante Aussage zulassen.
+
+## Statistische Signifikanz
 
 Designe dir deinen eigenen Würfel:
 
@@ -245,26 +231,41 @@ Wahrscheinlichkeit zufällig \>= 14 mal eine 6 zu würfeln
 binom(60, 1/6) %>% plot_binom(highlight = 14:30)
 ```
 
-# Experimental Design
+# Datenschatz Suche 1
 
-Um eine Frage optimal datengetrieben beantworten zu können, kann es notwendig sein, zuerst die "passenden" Daten dafür im Rahmen eines "Experimentes" zu generieren.
+```{r message=FALSE}
+data <- read_csv("data-buy.csv") %>% select(-event_web)
+```
 
-Beispiel: Ist der Rote oder der Graue Staubsauger bei den Kunden beliebter?
+Was waren die Zusammenhänge, die wir gefunden haben? Was würdest du dem "Decision Maker" vorschlagen?
 
-![](images/staubsauger.png){width="500"}
+[Jetzt Du! ...]
 
-Wenn keine Verkaufszahlen nach Farbe vorliegen, müssen wir erst Daten im Rahmen eines Experimentes generieren.
+## Geringe Internet Usage!
 
-![](images/staubsauger-experiment1.png){width="500"}
+Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besonderes großes Kaufinteresse haben:
 
-Ist dieses "Experimental Design" sinnvoll?
+**Kunden mit geringer Internet Usage (bbi_usg_gb)**:
 
-Wird im November 2020 nur der Graue Staubsauger verkauft, und im Februar 2021 nur der Rote Staubsauger, wie soll man unterschiedliche Verkaufszahlen interpretieren? Wurden mehr Rote Staubsauger verkauft, weil sich "Rot" besser verkauft? Oder weil im Februar 2021 die Corona-Beschränkungen weiter gelockert wurden und mehr Leute in die Shops gegangen sind?
+Die durchschnittliche bbi_usg_gb (Broad Band Internet Usage in Gigabyte) bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
 
-Mit so einem "Experimental-Design" ist es unmöglich, eine klare Schlussfolgerung zu ziehen!
+Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
 
-Daher: bereits bei der Planung des "Experiments" sollte klar sein, welche Schlussfolgerungen man ableiten möchte. Durch das Design des Experiments werden die genötigten Daten generiert, die diese Schlussfolgerungen ermöglichen.
+Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben: `%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)`, `filter(buy == 1)`
 
-![](images/staubsauber-experiment2.png){width="500"}
+[Jetzt Du! ...]
 
-Optimales "Expermental-Design": z.B. Kunden im Rahmen einer Kampagne zufällig in die Gruppen "Grau" und "Rot" einteilen, und den jeweiligen Staubsauger anbieten. Die Kundengruppen müssen groß genug sein, dass sie am Ende der Kampagne eine statistisch signifikante Aussage zulassen.
+## Mobile Voice!
+
+Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besonderes großes Kaufinteresse haben:
+
+**Kunden mit MobileVoice**:
+
+Bei Kunden mit MobileVoice gibt es 92 Käufer, bei Kunden ohne Mobile Voice sind es nur 66. Daher das Produkt nur Kunden mit MobileVoice anbieten, oder wenn noch nicht vorhanden als Kombi-Paket (MobileVoice + Produkt)
+
+Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
+
+Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben: `%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)`, `filter(buy == 1)`
+
+[Jetzt Du! ...]
+
