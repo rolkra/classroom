@@ -106,6 +106,15 @@ umsatz <- c(rep(1, 99), 1000)
 umsatz %>% mean() %>% round()
 ```
 
+### Mehr Gehalt
+
+Wie bekommt man mehr Gehalt?
+
+Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
+
+![](images/DDDM-process.jpg){width="800"}
+[Jetzt Du! ...]
+
 ### Cola Light oder Zero?
 
 Schmecken Cola Light und Cola Zero unterschiedlich?
@@ -124,15 +133,6 @@ flip_coin(times = 10, rounds = 10000, agg = TRUE) %>%
   explore_bar(success, num = FALSE)
 ```
 
-### Mehr Gehalt
-
-Wie bekommt man mehr Gehalt?
-
-Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
-
-![](images/DDDM-process.jpg){width="800"}
-[Jetzt Du! ...]
-
 ### Zusammenfassung
 
 Diese 4 Fallen kommen besonders häufig vor:
@@ -143,11 +143,11 @@ Diese 4 Fallen kommen besonders häufig vor:
 -   **Mittelwerte mit Extremwerten**:\
     100 Kunden haben je ca 1 EUR Umsatz, 1 Kunde hat 1000 EUR (Mittelwert 11 EUR). Ein typischer Kunde diese Kundengruppe hat also ca 11 EUR Umsatz!
 
--   **Statistische Signifikanz vergessen**:\
-    Blind Verkostung Cola Light vs Cola Zero: bei 6 von 10 Fällen richtig! Beweis, dass Unterschied erkannt wird, weil mehr als die Hälfte richtig!
-
 -   **Korrelation mit Kausalität verwechseln**:\
     Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
+
+-   **Statistische Signifikanz vergessen**:\
+    Blind Verkostung Cola Light vs Cola Zero: bei 6 von 10 Fällen richtig! Beweis, dass Unterschied erkannt wird, weil mehr als die Hälfte richtig!
 
 # Staubsauger Farbe!
 
@@ -197,9 +197,7 @@ dice %>%
 
 [Jetzt Du! ...]
 
-## Erwartungswert
-
-**Wenn du 60 mal würfelst, wie oft kommt eine 6?**
+Wenn du 60 mal würfelst, wie oft kommt eine 6?
 
 ```{r fig.height=2.5}
 roll_dice(times = 60, rounds = 1000, agg = TRUE) %>% explore(success)
@@ -215,11 +213,9 @@ roll_dice(times = 60, rounds = 1000, agg = TRUE) %>%
   add_line(1)  # change to correct value
 ```
 
-Wo liegt der Wert 14 (14 mal ein 6er)? Zeichne ihn ein!
+Wie wahrscheinliche ist es, dass man bei 60 mal würfeln 14 Sechser bekommst? Zufall oder ein "gezinkter Würfel"?
 
 [Jetzt Du! ...]
-
-Wie interpretierst du das Ergebnis?
 
 ## Binomialverteilung
 
