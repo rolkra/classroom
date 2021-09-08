@@ -135,7 +135,7 @@ flip_coin(times = 10, rounds = 10000, agg = TRUE) %>%
 
 ### Zusammenfassung
 
-Diese 4 Fallen kommen besonders häufig vor:
+Diese Fallen kommen besonders häufig vor:
 
 -   **Falscher Bezug**:\
     In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
@@ -143,6 +143,9 @@ Diese 4 Fallen kommen besonders häufig vor:
 -   **Mittelwerte mit Extremwerten**:\
     100 Kunden haben je ca 1 EUR Umsatz, 1 Kunde hat 1000 EUR (Mittelwert 11 EUR). Ein typischer Kunde diese Kundengruppe hat also ca 11 EUR Umsatz!
 
+-   **Äpfel mit Birnen vergleichen**:\
+    Gehalt von Personen mit und ohne Glatze (Du vergleichst eigentlich "alte Männer" mit "Jungen Frauen")
+    
 -   **Korrelation mit Kausalität verwechseln**:\
     Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
 
