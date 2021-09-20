@@ -77,7 +77,8 @@ In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fü
 
 Datenquelle: Sozialministerium (Corona-Fälle pro Stadt)
 
-![](images/DDDM-process.jpg){width="800"}
+![](images/DDDM-process.jpg){width="400"}
+
 [Jetzt Du! ...]
 
 ```{r}
@@ -89,6 +90,11 @@ corona <- data.frame(
 corona
 ```
 
+```{r}
+corona %>% 
+  mutate(risk = cases * 1)  # how to calculate risk properly?
+```
+
 
 ### Prepaid-Umsatz
 
@@ -98,7 +104,8 @@ Ein typischer Prepaid Kunde hat 11 EUR.
 
 Datenquelle: 100 Referenzkunden Prepaid (99 Kunden mit ca 1 EUR, und 1 Kunde mit 1000 EUR)
 
-![](images/DDDM-process.jpg){width="800"}
+![](images/DDDM-process.jpg){width="400"}
+
 [Jetzt Du! ...]
 
 ```{r}
@@ -112,7 +119,8 @@ Wie bekommt man mehr Gehalt?
 
 Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
 
-![](images/DDDM-process.jpg){width="800"}
+![](images/DDDM-process.jpg){width="400"}
+
 [Jetzt Du! ...]
 
 ### Cola Light oder Zero?
@@ -121,7 +129,8 @@ Schmecken Cola Light und Cola Zero unterschiedlich?
 
 Experiment: Blind Verkostung Cola Light vs Cola Zero mit einer Testperson. Bei 6 von 10 Fällen richtig gelegen! Beweis, dass Unterschied erkannt wird, weil mehr als die Hälfte richtig!
 
-![](images/DDDM-process.jpg){width="800"}
+![](images/DDDM-process.jpg){width="400"}
+
 [Jetzt Du! ...]
 
 ```{r}
