@@ -170,7 +170,7 @@ data %>% explore(age) %>% add_line(58)
 
 ## Automatisierung
 
-Wir können die Erzeugung dieser Grafiken auch einfach automatisieren, indem wir in der Console (Fenster links unten) folgenden Code eingeben und ausführen (Enter drücken)
+Wir können die Erzeugung dieser Grafiken auch einfach automatisieren, indem wir in der Console (Fenster links unten) folgenden Code eingeben und ausführen (Enter drücken). Bitte nur den Code eingeben (ohne die drei Anführungszeichen am Anfang und am Ende).
 
 ```data %>% report(output_dir = ".")```
 
@@ -194,7 +194,7 @@ Welchen Zusammenhang gibt es zwischen Alter und Kaufverhalten?
 
 ## Automatisierung
 
-Wir können die Erzeugung dieser Grafiken auch einfach automatisieren, indem wir in der Console (Fenster links unten) folgenden Code eingeben und ausführen (Enter drücken)
+Wir können die Erzeugung dieser Grafiken auch einfach automatisieren, indem wir in der Console (Fenster links unten) folgenden Code eingeben und ausführen (Enter drücken). Bitte nur den Code eingeben (ohne die drei Anführungszeichen am Anfang und am Ende).
 
 ```data %>% report(target = buy, output_dir = ".")```
 
