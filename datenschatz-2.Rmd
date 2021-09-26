@@ -46,7 +46,7 @@ Lerne "Daten Driven Decision Making" in der Praxis kennen und entdecke auf spiel
 
 ## Echtes Gold?
 
-Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es ein echter Datenschatz mit Goldmünzen, oder enthält der Schatz doch nur "Plastik-Münzen"? 
+Wir haben bereits einige interessante Muster in den Daten gefunden. Aber ist es ein echter Datenschatz mit Goldmünzen, oder enthält der Schatz doch nur "Plastik-Münzen"?
 
 Und was machen wir mit dem Datenschatz? Verwenden wir ihn für etwas sinnvolles, das uns im Business weiter bringt, oder wird er einfach wieder "vergraben"?
 
@@ -60,10 +60,10 @@ Nicht immer funktioniert das:
 
 Für eine gute Datengetriebene Entscheidungen braucht man:
 
-- Klare Fragestellung
-- Gute Daten
-- Plausible Muster (Insights)
-- Sinnvolle Schlussfolgerungen
+-   Klare Fragestellung
+-   Gute Daten
+-   Plausible Muster (Insights)
+-   Sinnvolle Schlussfolgerungen
 
 ![](images/decision-making.jpg){width="800"}
 
@@ -73,7 +73,7 @@ Für eine gute Datengetriebene Entscheidungen braucht man:
 
 In welcher Stadt (Wien oder Fürstenfeld) ist die Corona-Gefahr geringer?
 
-In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren! 
+In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
 
 Datenquelle: Sozialministerium (Corona-Fälle pro Stadt)
 
@@ -94,7 +94,6 @@ corona
 corona %>% 
   mutate(risk = cases * 1)  # how to calculate risk properly?
 ```
-
 
 ### Prepaid-Umsatz
 
@@ -144,7 +143,9 @@ flip_coin(times = 10, rounds = 10000, agg = TRUE) %>%
 
 ### Zusammenfassung
 
-Diese Fallen kommen besonders häufig vor:
+![](images/DD-bullshit-detektor.jpg){width="200"}
+
+Wenn du diese Fallen erkennst, dann hast du bereits einen tollen "Data Driven Bullshit"-Detektor:
 
 -   **Falscher Bezug**:\
     In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
@@ -154,12 +155,50 @@ Diese Fallen kommen besonders häufig vor:
 
 -   **Äpfel mit Birnen vergleichen**:\
     Gehalt von Personen mit und ohne Glatze (Du vergleichst eigentlich "alte Männer" mit "Jungen Frauen")
-    
+
 -   **Korrelation mit Kausalität verwechseln**:\
     Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
 
 -   **Statistische Signifikanz vergessen**:\
     Blind Verkostung Cola Light vs Cola Zero: bei 6 von 10 Fällen richtig! Beweis, dass Unterschied erkannt wird, weil mehr als die Hälfte richtig!
+
+# Favoriten am Semmering!
+
+Während einer Corona Welle sind zu Spitzenzeiten mehr als 4.700 Personen am Semmering.
+
+Die Mubilfunk-Bewegungsdaten von invenium zeigen: "Die meisten Gäste kamen aus Favoriten". Das zeigt, dass sich Menschen in Favoriten besonders schlecht an staatliche Vorgaben halten!
+
+![](images/semmering-invenium.png){width="400"}
+
+Kurier Artikel: <https://kurier.at/chronik/oesterreich/semmering-chaos-mobilfunk-daten-zeigen-spitzenzeiten-mit-mehr-als-4000-besuchern/401147658>
+
+[Jetzt Du! ...]
+
+# Data Driven Lotto
+
+Mit Statistik im Lotto erfolgreich sein!
+
+Durch eine genaue Analyse welche Zahlen an welchen Tagen im österreichischen Lotto gezogen wurden, können die Gewinnchancen massiv erhöht werden:
+
+![](images/lotto-krone.png){width="600"}
+
+An einem 31. gab es laut Kronenzeitung bereits 56 Ziehungen. Im Schnitt kam jede Zahl 8 mal. Die Zahl 38 kam jedoch 14 mal. Daher unbedingt bei der nächsten Ziehung am 31. auf die Zahl 38 setzen!
+
+[Jetzt Du! ...]
+
+# Staubsauger Werbung
+
+**Fragestellung**:
+
+Welche Zielgruppe soll der Werbespot für den Staubsauger ansprechen?
+
+**Vorgehen**:
+
+Es wurden zunächst das Produkt im Shop ausprobiert. Danach wurden die Daten von 1000 Kunden, die bei einer Testkampagne teilgenommen haben, auf bzgl. Datenqualität überprüft und danach ausgewertet. Zu jedem Kunden wurden 14 Variablen erfasst (neben Alter, Geschlecht, Wohnort, Produktnutzung etc. auch das Kaufverhalten). Es wurde für die Muster-Suche der Machine Learing Algorithmus "Decision Tree" angewendet.
+
+**Ergebnis**:
+
+Besonders interessant ist der Staubsauger für jüngere Frauen (unter 52 Jahre), die Internet-Affin sind (Internet-Usage \> 61 GB). Besonders uninteressant ist das Produkt für Kunden ab 52 Jahre.
 
 # Staubsauger Farbe!
 
@@ -239,52 +278,12 @@ Wahrscheinlichkeit zufällig \>= 14 mal eine 6 zu würfeln
 binom(60, 1/6) %>% plot_binom(highlight = 14:30)
 ```
 
-# Datenschatz Suche 1
-
-```{r message=FALSE}
-data <- read_csv("data-buy.csv") %>% select(-event_web)
-```
-
-Was waren die Zusammenhänge, die wir gefunden haben? Was würdest du dem "Decision Maker" vorschlagen?
-
-[Jetzt Du! ...]
-
-## Geringe Internet Usage!
-
-Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besonderes großes Kaufinteresse haben:
-
-**Kunden mit geringer Internet Usage (bbi_usg_gb)**:
-
-Die durchschnittliche bbi_usg_gb (Broad Band Internet Usage in Gigabyte) bei Kaufinteresse = 72, ohne Kaufinteresse = 174.
-
-Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
-
-Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben: `%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)`, `filter(buy == 1)`
-
-[Jetzt Du! ...]
-
-## Mobile Voice!
-
-Eine Analyse aus der Produktentwicklung hat ergeben, dass folgende Kunden besonderes großes Kaufinteresse haben:
-
-**Kunden mit MobileVoice**:
-
-Bei Kunden mit MobileVoice gibt es 92 Käufer, bei Kunden ohne Mobile Voice sind es nur 66. Daher das Produkt nur Kunden mit MobileVoice anbieten, oder wenn noch nicht vorhanden als Kombi-Paket (MobileVoice + Produkt)
-
-Passt das mit den Analyse-Ergebnissen aus unserer Datenschatz Suche 1 zusammen? Wenn nein, wer ist in welche Falle "getappt"?
-
-Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben: `%>%`, `explore(eigenschaft)`, `explore(eigenschaft, target = buy)`, `describe(eigenschaft)`, `filter(buy == 1)`
-
-[Jetzt Du! ...]
-
 # Export als HTML
 
-Wir können nun das gesamte Notebook als HTML-Dokument exportieren. Drücke dafür den "Knit-it"-Button (Englisch für "Stricken") am oberen Rand. 
+Wir können nun das gesamte Notebook als HTML-Dokument exportieren. Drücke dafür den "Knit-it"-Button (Englisch für "Stricken") am oberen Rand.
 
 Es wird das HTML-Dokument automatisch generiert und angezeigt. Du findest das Dokument dann auch im Files-Fenster (rechts unten)
 
-Um es zu exportieren klicke das "Kästchen" an und wähle "More" > "Export..." 
+Um es zu exportieren klicke das "Kästchen" an und wähle "More" \> "Export..."
 
 [Jetzt Du! ...]
-
-
