@@ -200,6 +200,8 @@ Es wurden zunächst das Produkt im Shop ausprobiert. Danach wurden die Daten von
 
 Besonders interessant ist der Staubsauger für jüngere Frauen (unter 52 Jahre), die Internet-Affin sind (Internet-Usage \> 61 GB). Besonders uninteressant ist das Produkt für Kunden ab 52 Jahre.
 
+[Jetzt Du! ...]
+
 # Staubsauger Farbe!
 
 In Datenschatz Suche - Teil 1 wurde ein Produkt ca. von jedem 6. Kunden gekauft - das entspricht der gleichen Wahrscheinlichkeit, wie bei einem Würfel eine 6 zu würfeln (1/6 = 16,7%).
