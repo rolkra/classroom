@@ -235,3 +235,15 @@ Wir erhalten die vorhergesagten Wahrscheinlichkeiten für Nicht-Kauf und Kauf (b
 Welchen Kunden soll das Produkt angeboten werden und warum? Erzähle eine "Geschichte", die alle wesentlichen Insights enthält, aber trotzdem für einen Data Science Laien einfach, verständlich und nachvollziehbar ist!
 
 [Jetzt Du! ...]
+
+# Reproducible Data Science
+
+Wir können nun das gesamte Notebook als HTML-Dokument exportieren. Drücke dafür den "Knit-it"-Button (Englisch für "Stricken") am oberen Rand. 
+
+Es wird das HTML-Dokument automatisch generiert und angezeigt. Du findest das Dokument dann auch im Files-Fenster (rechts unten)
+
+Um es zu exportieren klicke das "Kästchen" an und wähle "More" > "Export..." 
+
+[Jetzt Du! ...]
+
+Damit haben wir die einzelnen Arbeitsschritte in einer "Reproduzierbaren" Weise dokumentiert. Ändern sich z.B. die Ausgangsdaten, dann können wir das Dokument auf Knopfdruck aktualisieren (kein Copy & Paste von Grafiken von Excel nach Powerpoint etc.)

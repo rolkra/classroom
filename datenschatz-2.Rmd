@@ -277,3 +277,14 @@ Du kannst die Funktionen verwenden, die wir bereits kennen gelernt haben: `%>%`,
 
 [Jetzt Du! ...]
 
+# Export als HTML
+
+Wir können nun das gesamte Notebook als HTML-Dokument exportieren. Drücke dafür den "Knit-it"-Button (Englisch für "Stricken") am oberen Rand. 
+
+Es wird das HTML-Dokument automatisch generiert und angezeigt. Du findest das Dokument dann auch im Files-Fenster (rechts unten)
+
+Um es zu exportieren klicke das "Kästchen" an und wähle "More" > "Export..." 
+
+[Jetzt Du! ...]
+
+
