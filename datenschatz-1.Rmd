@@ -108,6 +108,10 @@ Es gibt (vereinfacht) 4 grundlegende Schritte:
 -   **Finding Insights**: Finde nützliche Muster (und hinterfrage sie)!
 -   **Storytelling**: Erzähle eine (wahre) Geschichte!
 
+# Fragestellung
+
+![](images/staubsauger-start.png){width="800"}
+
 # Business Understanding
 
 Es wurde ein neues Produkt entwickelt, und das Kaufinteresse an 1000 Personen getestet. Du bekommst nun die Daten und sollst herausfinden, für wen das Produkt besonders gut geeignet ist.
