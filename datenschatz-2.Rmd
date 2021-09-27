@@ -116,7 +116,7 @@ umsatz %>% mean() %>% round()
 
 Wie bekommt man mehr Gehalt?
 
-Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
+Eine Studie besagt: Personen mit Glatze verdienen mehr Geld. Rasiere dir eine Glatze, dann bekommst du auch mehr Geld!
 
 ![](images/DDDM-process.jpg){width="400"}
 
