@@ -143,9 +143,9 @@ flip_coin(times = 10, rounds = 10000, agg = TRUE) %>%
 
 ### Zusammenfassung
 
-![](images/DD-bullshit-detektor.jpg){width="200"}
+![](images/DDB-examples.png){width="400"}
 
-Wenn du diese Fallen erkennst, dann hast du bereits einen tollen "Data Driven Bullshit"-Detektor:
+Wenn du diese Fallen erkennst, dann hast du bereits einen tollen "Data Driven Bullshit"-Detektor!
 
 -   **Falscher Bezug**:\
     In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
@@ -166,7 +166,7 @@ Wenn du diese Fallen erkennst, dann hast du bereits einen tollen "Data Driven Bu
 
 Während einer Corona Welle sind zu Spitzenzeiten mehr als 4.700 Personen am Semmering.
 
-Die Mubilfunk-Bewegungsdaten von invenium zeigen: "Die meisten Gäste kamen aus Favoriten". Das zeigt, dass sich Menschen in Favoriten besonders schlecht an staatliche Vorgaben halten!
+Die Mubilfunk-Bewegungsdaten von Invenium zeigen: "Die meisten Gäste kamen aus Favoriten". Das zeigt, dass sich Menschen in Favoriten besonders schlecht an staatliche Vorgaben halten!
 
 ![](images/semmering-invenium.png){width="400"}
 
