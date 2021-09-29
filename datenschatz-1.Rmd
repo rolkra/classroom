@@ -215,6 +215,17 @@ Ein Entscheidungsbaum (Decision Tree) kann uns die Zusammenhänge erklären:
 data %>% explain_tree(target = buy)
 ```
 
+Der "Entscheidungsbaum" startet mit der gesamten Kundengruppe. Hier hat die Mehrheit NICHT gekauft (target = 0). Es sind 16% (0.16) Käufer in dieser Gruppe. Die Gruppe enthält alle (100%) der Kunden.
+
+Der Algorithmus findet nun die nächste optimale Aufteilung in zwei Untergruppen:
+
+* Kunden mit "age < 52" (Abzweigung rechts) mit 45% Käufern (enthält noch 15% der Kunden)
+* Kunden mit "age >= 52" (Abzweigung links) mit 4% Käufern (enthält noch 72% der Kunden)
+
+Die Gruppe "age < 52" wird nun weiter aufgeteilt bis schlussendlich 5 unterschiedliche Gruppen gefunden wurden (Käufer 4%, 11%, 55%, 42%, 86%)
+
+Am besten passt der Staubsauger zu jungen Frauen mit Internet-Usage > 61. Das entspricht dem "Kästchen" ganz rechts unten im Baum. In dieser Gruppe hat die Mehrheit gekauft (target = 1), die Kaufwahrscheinlichkeit liegt bei 86% (0.86). Die Gruppe enthält 9% aller Kunden.
+
 ## Machine Learning
 
 Der Decision Tree Algorithmus "lernt" welche Kunden eher kaufen. Nun können wir ein Modell erstellen und eine Vorhersage machen:
