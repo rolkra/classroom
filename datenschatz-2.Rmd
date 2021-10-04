@@ -143,14 +143,16 @@ flip_coin(times = 10, rounds = 10000, agg = TRUE) %>%
 
 ### Zusammenfassung
 
-![](images/DDB-examples.png){width="400"}
+![](images/DDDM-process.jpg){width="600"}
+
+![](images/DD-bullshit-detektor-2.png){width="600"}
 
 Wenn du diese Fallen erkennst, dann hast du bereits einen tollen "Data Driven Bullshit"-Detektor!
 
 -   **Falscher Bezug**:\
     In Wien gibt es 100 Corona Fälle, in Fürstenfeld nur 50, daher lieber nach Fürstenfeld fahren!
 
--   **Mittelwerte mit Extremwerten**:\
+-   **Verzerrte Mittelwerte**:\
     100 Kunden haben je ca 1 EUR Umsatz, 1 Kunde hat 1000 EUR (Mittelwert 11 EUR). Ein typischer Kunde diese Kundengruppe hat also ca 11 EUR Umsatz!
 
 -   **Äpfel mit Birnen vergleichen**:\
