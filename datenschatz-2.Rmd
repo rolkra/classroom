@@ -188,6 +188,20 @@ An einem 31. gab es laut Kronenzeitung bereits 56 Ziehungen. Im Schnitt kam jede
 
 [Jetzt Du! ...]
 
+# Kauft Festnetz!
+
+Es wurde die Churn-Rate von Handy-Tarifen analysiert. Dabei ist aufgefallen, dass Kunden MIT Festnetz eine geringere Churn-Rate (des Handy Tarifes) haben.
+
+
+| Produkte               |  Churn-Rate Handy Tarif |
+|------------------------|-------------------------|
+| Handy Tarif            | 1.5%                    |
+| Handy Tarif + Festnetz | 2%                      |
+
+Daher unbedingt unseren Kunden mit Handy-Tarif auch Festnetz anbieten, so können wir die Churn-Rate der Handy-Tarife senken!
+
+[Jetzt Du! ...]
+
 # Staubsauger Werbung
 
 ![](images/staubsauger-love.png){width="400"}
@@ -210,9 +224,7 @@ Besonders interessant ist der Staubsauger für jüngere Frauen (unter 52 Jahre),
 
 In Datenschatz Suche - Teil 1 wurde ein Produkt ca. von jedem 6. Kunden gekauft - das entspricht der gleichen Wahrscheinlichkeit, wie bei einem Würfel eine 6 zu würfeln (1/6 = 16,7%).
 
-Nun hat die Produktentwicklung eine Änderung am Produkt vorgenommen, es ist nun ganz grau statt rot. Das graue Produkt haben 14 von 60 Test-Kunden gekauft (23,3%) - das ist eine um fast 40% höhere Take-Rate als vorher! Soll die Produktion jetzt umgestellt werden (Investitionskosten von 1 Mio EUR)
-
-Investieren oder doch eine "Falle"?
+Das Produktmanagement möchte testen, ob sich ein grauer Staubsauger noch besser verkauft. Wie können wir das datengetrieben entscheiden?
 
 [Jetzt Du! ...]
 
@@ -230,15 +242,23 @@ Wenn keine Verkaufszahlen nach Farbe vorliegen, müssen wir erst Daten im Rahmen
 
 Ist dieses "Experimental Design" sinnvoll?
 
-Wird im November 2020 nur der Graue Staubsauger verkauft, und im Februar 2021 nur der Rote Staubsauger, wie soll man unterschiedliche Verkaufszahlen interpretieren? Wurden mehr Rote Staubsauger verkauft, weil sich "Rot" besser verkauft? Oder weil im Februar 2021 die Corona-Beschränkungen weiter gelockert wurden und mehr Leute in die Shops gegangen sind?
+Wird im November 2020 nur der rote Staubsauger verkauft, und im Februar 2021 nur der graue Staubsauger, wie soll man unterschiedliche Verkaufszahlen interpretieren? Wurden mehr graue Staubsauger verkauft, weil sich "grau" besser verkauft? Oder weil im Februar 2021 die Corona-Beschränkungen weiter gelockert wurden und mehr Leute in die Shops gegangen sind?
 
 Mit so einem "Experimental-Design" ist es unmöglich, eine klare Schlussfolgerung zu ziehen!
 
 Daher: bereits bei der Planung des "Experiments" sollte klar sein, welche Schlussfolgerungen man ableiten möchte. Durch das Design des Experiments werden die genötigten Daten generiert, die diese Schlussfolgerungen ermöglichen.
 
-![](images/staubsauber-experiment2.png){width="500"}
+![](images/staubsauger-experiment2.png){width="500"}
 
-Optimales "Expermental-Design": z.B. Kunden im Rahmen einer Kampagne zufällig in die Gruppen "Grau" und "Rot" einteilen, und den jeweiligen Staubsauger anbieten. Die Kundengruppen müssen groß genug sein, dass sie am Ende der Kampagne eine statistisch signifikante Aussage zulassen.
+Expermental-Design: z.B. Kunden im Rahmen einer Kampagne zufällig in die Gruppen "Grau" und "Rot" einteilen, und den jeweiligen Staubsauger anbieten. 
+
+![](images/staubsauger-experiment3.png){width="500"}
+
+Die Kundengruppen müssen groß genug sein, dass sie am Ende der Kampagne eine statistisch signifikante Aussage zulassen.
+
+Optimales "Experimental Design" erreicht?
+
+[Jetzt Du! ...]
 
 ## Statistische Signifikanz
 
