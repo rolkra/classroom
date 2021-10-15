@@ -123,7 +123,7 @@ Von deiner Analyse hängt es ab ob das Produkt auf den Markt kommt und wie es be
 Die Daten sind als `data` abgespeichert. Die Variable `buy` enthält die Info, ob der Kunde ein Kaufinteresse hat (buy == 1) oder nicht (buy == 0).
 
 ```{r message=FALSE}
-data <- read_csv("data-buy.csv") %>% select(-event_web)
+data <- read_csv("data-buy2.csv")
 ```
 
 ## buy
@@ -232,14 +232,14 @@ Der Decision Tree Algorithmus "lernt" welche Kunden eher kaufen. Nun können wir
 
 ```{r include=FALSE}
 model <- data %>%
-  select(age, female_ind, bbi_usg_gb, buy) %>% 
+  select(age, gender, bbi_usg_gb, buy) %>% 
   explain_tree(target = buy, out = "model")
 ```
 
 ```{r}
 predict(
   model, 
-  tibble(age = 40, female_ind = 0, bbi_usg_gb = 10)
+  tibble(age = 40, gender = "female", bbi_usg_gb = 10)
 )
 ```
 
