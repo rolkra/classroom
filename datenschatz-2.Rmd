@@ -195,8 +195,8 @@ Es wurde die Churn-Rate von Handy-Tarifen analysiert. Dabei ist aufgefallen, das
 
 | Produkte               |  Churn-Rate Handy Tarif |
 |------------------------|-------------------------|
-| Handy Tarif            | 1.5%                    |
-| Handy Tarif + Festnetz | 2%                      |
+| Handy Tarif            | 2.0%                    |
+| Handy Tarif + Festnetz | 1.5%                    |
 
 Daher unbedingt unseren Kunden mit Handy-Tarif auch Festnetz anbieten, so können wir die Churn-Rate der Handy-Tarife senken!
 
