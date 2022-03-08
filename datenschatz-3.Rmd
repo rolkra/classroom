@@ -179,3 +179,8 @@ Wenn du das Programmieren in R lernen möchtest hier ein paar Empfehlungen:
 - <https://www.datapine.com/blog/data-driven-decision-making-in-businesses>
 
 - <https://blog.bismart.com/en/8-tips-for-data-driven-decisions>
+
+## Data Science Lernpfad
+
+- https://tasktrack.telekom.at/confluence/display/BICC/Becoming+a+Data+Scientist
+
